@@ -34,7 +34,7 @@ export default [
       "Un bastón de madera de tesoro rematado por una gran piedra mágica azul de primera calidad. Se dice que un bastón así es el regalo de toda una vida.",
       "<ul><li>Mientras estés sintonizado, obtienes <strong>+1</strong> a las tiradas de ataque de conjuro y a la CD de tus conjuros.</li><li>Los conjuros de <strong>agua y hielo</strong> que lances con él infligen daño adicional igual a tu bonificador por competencia en una de sus tiradas.</li><li>Una vez al amanecer, puedes lanzar <em>Lanza de Hielo</em> sin gastar espacio.</li></ul>"
     ),
-    acts: [n => utilityActivity(n, { name: "Lanza de Hielo gratuita", consumption: consumeUse })],
+    acts: [n => utilityActivity(n, { name: "Lanza de Hielo gratuita", activation: act("action"), consumption: consumeUse })],
     extra: { type: { value: "trinket", baseItem: "" }, uses: uses(1, "dawn") }
   }),
   item("Piedra Mágica", "consumable", {
@@ -55,7 +55,7 @@ export default [
   item("Poción de Curación Menor", "consumable", {
     img: "icons/svg/heal.svg", rarity: "common", price: 50, weight: 0.5, magical: true,
     extra: { type: { value: "potion", subtype: "" }, uses: { spent: 0, max: "1", recovery: [], autoDestroy: true } },
-    description: html("Una infusión de hierbas cargada con un encantamiento de curación de rango Principiante. Recuperas <strong>2d4 + 2</strong> puntos de golpe al beberla."),
+    description: html("Una infusión de hierbas cargada con un encantamiento de curación de nivel Básico. Recuperas <strong>2d4 + 2</strong> puntos de golpe al beberla."),
     acts: [n => healActivity(n, dmg(2, 4, "healing", { bonus: "2" }), { activation: act("bonus"), consumption: consumeUse })]
   }),
   item("Tarjeta de Aventurero", "loot", {
@@ -64,9 +64,11 @@ export default [
     description: html("Una placa metálica emitida por el Gremio de Aventureros con el nombre, la raza, la profesión y el <strong>rango</strong> (F a S) de su portador. Funciona en todas las sucursales del mundo. El grupo también tiene su propio rango de equipo.")
   }),
 
-  // ───────────── Monedas (equivalencias sugeridas en la guía) ─────────────
-  coin("Moneda de Oro de Asura", 10, "gp", "Moneda de oro acuñada por el Reino de Asura, la más valiosa del Continente Central. <strong>Equivale a 10 po</strong> (la economía de Asura es mucho más rica que la de otros reinos)."),
-  coin("Moneda de Plata de Asura", 1, "gp", "Moneda de plata de Asura. <strong>Equivale a 1 po.</strong> 10 monedas de plata = 1 moneda de oro de Asura."),
-  coin("Moneda de Cobre de Asura", 1, "sp", "Moneda de cobre de Asura. <strong>Equivale a 1 pp</strong> (pieza de plata del manual)."),
-  coin("Piedra Verde (Continente Demoníaco)", 1, "cp", "En el Continente Demoníaco se comercia con piedras talladas en lugar de monedas. La piedra verde es la de menor valor: <strong>equivale a 1 pc</strong>. Las piedras de hierro (≈1 pp) y las de cristal (≈1 po) son las de mayor valor.")
+  // ───────────── Monedas (valores de la guía del DM) ─────────────
+  ...[
+    ["Asura de Oro", 1000, "Asura"], ["Asura de Plata", 100, "Asura"], ["Gran Asura de Cobre", 10, "Asura"], ["Asura de Cobre", 1, "Asura"],
+    ["Cheque del Papado", 500, "Milis"], ["Cheque del Ejército", 100, "Milis"], ["Milis de Oro", 50, "Milis"], ["Milis de Plata", 10, "Milis"],
+    ["Gran Milis de Cobre", 1, "Milis"], ["Milis de Cobre", 0.1, "Milis"],
+    ["Moneda de Jade", 10, "Demoníaca"], ["Moneda de Hierro", 1, "Demoníaca"], ["Moneda Oxidada", 0.1, "Demoníaca"], ["Moneda de Piedra", 0.01, "Demoníaca"]
+  ].map(([n, usd, region]) => coin(n, 0, "gp", `Moneda ${region === "Demoníaca" ? "del Continente Demoníaco" : `de ${region}`}. <strong>Valor: ${String(usd).replace(".", "'")} $</strong> (ver la tabla de monedas en la guía).`))
 ];

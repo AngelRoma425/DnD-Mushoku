@@ -1,12 +1,12 @@
 // Bestiario: monstruos y PNJ del mundo de Mushoku Tensei.
-import { SOURCE, dmg, act, activities, attackActivity, saveActivity, healActivity, utilityActivity, uses, consumeUse, html } from "../tools/helpers.mjs";
+import { SOURCE, dmg, act, activities, attackActivity, saveActivity, healActivity, utilityActivity, uses, consumeUse, html, inheritActivation } from "../tools/helpers.mjs";
 import HECHIZOS from "./hechizos.mjs";
 import RASGOS from "./rasgos.mjs";
 
-const abil = (str, dex, con, int, wis, cha) =>
+export const abil = (str, dex, con, int, wis, cha) =>
   Object.fromEntries(Object.entries({ str, dex, con, int, wis, cha }).map(([k, v]) => [k, { value: v, proficient: 0 }]));
 
-function weapon(owner, name, { kind = "melee", type = "natural", number, denomination, types, extraParts = [], properties = [], reach = 5, range = null, ability = "", description = "" }) {
+export function weapon(owner, name, { kind = "melee", type = "natural", number, denomination, types, extraParts = [], properties = [], reach = 5, range = null, ability = "", description = "" }) {
   return {
     name, type: "weapon", img: kind === "melee" ? "icons/svg/sword.svg" : "icons/svg/target.svg",
     system: {
@@ -17,12 +17,16 @@ function weapon(owner, name, { kind = "melee", type = "natural", number, denomin
       properties,
       range: range ?? { value: null, long: null, reach, units: "ft" },
       damage: { base: dmg(number, denomination, types), versatile: dmg(null, null, []) },
-      activities: activities(attackActivity(`${owner}.${name}`, { kind, classification: "weapon", includeBase: true, ability, parts: extraParts }))
+      activities: activities(attackActivity(`${owner}.${name}`, { kind, classification: "weapon", includeBase: true, activation: act(), ability, parts: extraParts }))
     }
   };
 }
 
-function trait(owner, name, description, { activation, usesData, acts = [] } = {}) {
+export function trait(owner, name, description, opts = {}) {
+  return inheritActivation(traitDoc(owner, name, description, opts), opts.activation);
+}
+
+function traitDoc(owner, name, description, { activation, usesData, acts = [] } = {}) {
   return {
     name, type: "feat", img: "icons/svg/upgrade.svg",
     system: {
@@ -42,7 +46,7 @@ const copy = (list, names) => names.map(n => {
   return structuredClone(found);
 });
 
-function npc(name, { img = "icons/svg/mystery-man.svg", cr, xp, size = "med", type = "beast", ac, hp, hpFormula, walk = 30, abilities, skills = {}, darkvision = 0, languages = [], spellcasting = "", spellLevel = 0, biography, items = [] }) {
+export function npc(name, { img = "icons/svg/mystery-man.svg", cr, xp, size = "med", type = "beast", ac, hp, hpFormula, walk = 30, abilities, skills = {}, darkvision = 0, languages = [], spellcasting = "", spellLevel = 0, biography, items = [] }) {
   return {
     name, type: "npc", img,
     system: {
@@ -88,12 +92,12 @@ export default [
       trait("Lobo Ácido", "Táctica de Manada", "El lobo tiene ventaja en las tiradas de ataque contra una criatura si al menos uno de sus aliados está a 5 pies de ella y no está incapacitado.")
     ]
   }),
-  npc("Mago de Rango Intermedio", {
+  npc("Mago de Nivel Intermedio", {
     cr: 2, type: "humanoid", ac: 12, hp: 33, hpFormula: "6d8+6", abilities: abil(9, 14, 12, 17, 13, 11), skills: { arc: 1, his: 1 },
-    languages: ["common"], spellcasting: "int", spellLevel: 5,
-    biography: html("Un mago formado en la Universidad de Magia de Ranoa o como tutor de una casa noble. Domina dos o tres escuelas a rango Intermedio. Suele trabajar como apoyo en grupos de aventureros de rango C o B."),
+    languages: ["common", "sylvan"], spellcasting: "int", spellLevel: 5,
+    biography: html("Un mago formado en la Universidad de Magia de Ranoa o como tutor de una casa noble. Domina dos o tres escuelas a nivel Intermedio. Suele trabajar como apoyo en grupos de aventureros de rango C o B."),
     items: [
-      weapon("Mago de Rango Intermedio", "Bastón", { type: "simpleM", number: 1, denomination: 6, types: ["bludgeoning"] }),
+      weapon("Mago de Nivel Intermedio", "Bastón", { type: "simpleM", number: 1, denomination: 6, types: ["bludgeoning"] }),
       ...copy(HECHIZOS, ["Bola de Agua", "Bala de Piedra", "Manantial", "Curación", "Barrera Elemental", "Cañón de Piedra", "Lanza de Hielo", "Lodazal"])
     ]
   }),
@@ -108,15 +112,15 @@ export default [
       ...copy(HECHIZOS, ["Curación", "Desintoxicación", "Barrera Elemental", "Curación Intermedia"])
     ]
   }),
-  npc("Espadachín del Dios de la Espada (Avanzado)", {
+  npc("Espadachín del Filo Celestial (Experto)", {
     cr: 5, type: "humanoid", ac: 16, hp: 82, hpFormula: "11d8+33", walk: 35, abilities: abil(16, 18, 16, 11, 13, 10), skills: { acr: 1, ath: 1, per: 1 },
     languages: ["common"],
-    biography: html("Un espadachín de rango Avanzado del Estilo del Dios de la Espada, formado en el Santuario de la Espada del norte. Ataca siempre primero y busca terminar el combate de un único corte."),
+    biography: html("Un espadachín de nivel Avanzado (Experto) del Estilo Filo Celestial, formado en el Santuario de la Espada del norte. Ataca siempre primero y busca terminar el combate de un único corte."),
     items: [
-      weapon("Espadachín del Dios de la Espada (Avanzado)", "Espada Larga", { type: "martialM", number: 1, denomination: 8, types: ["slashing"], properties: ["ver", "fin"], ability: "dex" }),
-      trait("Espadachín del Dios de la Espada (Avanzado)", "Ataque Múltiple", "El espadachín hace tres ataques con su espada larga."),
-      trait("Espadachín del Dios de la Espada (Avanzado)", "Toki", "El espadachín suma +2 a las salvaciones de Fuerza y Constitución, y su velocidad ya incluye el aumento del aura de combate."),
-      ...copy(RASGOS, ["Estilo del Dios de la Espada"])
+      weapon("Espadachín del Filo Celestial (Experto)", "Espada Larga", { type: "martialM", number: 1, denomination: 8, types: ["slashing"], properties: ["ver", "fin"], ability: "dex" }),
+      trait("Espadachín del Filo Celestial (Experto)", "Ataque Múltiple", "El espadachín hace tres ataques con su espada larga."),
+      trait("Espadachín del Filo Celestial (Experto)", "Toki", "El espadachín suma +2 a las salvaciones de Fuerza y Constitución, y su velocidad ya incluye el aumento del aura de combate."),
+      ...copy(RASGOS, ["Estilo Filo Celestial"])
     ]
   })
 ];

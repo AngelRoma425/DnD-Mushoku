@@ -33,7 +33,7 @@ function base(owner, key, type, extra) {
   const _id = id(owner, "activity", extra.key ?? key);
   return {
     _id, type, name: extra.name ?? "", img: extra.img ?? "",
-    activation: extra.activation ?? { override: false },
+    activation: extra.activation ? { ...(typeof extra.activation === "string" ? activation(extra.activation) : extra.activation), override: true } : { override: false },
     consumption: extra.consumption ?? { targets: [], scaling: { allowed: false, max: "" }, spellSlot: true },
     description: { chatFlavor: extra.flavor ?? "" },
     duration: { override: false }, range: { override: false },
@@ -80,6 +80,15 @@ export function activities(...list) {
   return Object.fromEntries(list.map(a => [a._id, a]));
 }
 
+/** Da a las actividades sin activación propia la activación del objeto (dnd5e 4.x ya no la guarda en el objeto). */
+export function inheritActivation(doc, activationData) {
+  if (!activationData?.type) return doc;
+  for (const a of Object.values(doc.system.activities ?? {})) {
+    if (!a.activation?.type) a.activation = { ...activationData, override: true };
+  }
+  return doc;
+}
+
 /** Usos limitados por descanso. */
 export function uses(max, period = "lr") {
   return { spent: 0, max: String(max), recovery: [{ period, type: "recoverAll" }] };
@@ -89,3 +98,8 @@ export function uses(max, period = "lr") {
 export const consumeUse = { targets: [{ type: "itemUses", target: "", value: "1", scaling: { mode: "", formula: "" } }], scaling: { allowed: false, max: "" }, spellSlot: false };
 
 export const html = (...paras) => paras.map(p => (p.startsWith("<") ? p : `<p>${p}</p>`)).join("\n");
+
+/** Daño directo sin tirada de ataque ni salvación. */
+export function damageActivity(owner, parts, extra = {}) {
+  return { ...base(owner, "damage", "damage", extra), damage: { critical: { allow: false, bonus: "" }, parts } };
+}

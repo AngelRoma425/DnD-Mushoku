@@ -1,7 +1,11 @@
 // Dotes, estilos de espada, ojos demoníacos y rasgos raciales.
-import { SOURCE, dmg, act, activities, attackActivity, saveActivity, healActivity, utilityActivity, uses, consumeUse, html } from "../tools/helpers.mjs";
+import { SOURCE, dmg, act, activities, attackActivity, saveActivity, healActivity, utilityActivity, uses, consumeUse, html, inheritActivation } from "../tools/helpers.mjs";
 
-function feat(name, { img, kind = "feat", subtype = "", requirements = "", description, activation, usesData, acts = [] }) {
+function feat(name, opts) {
+  return inheritActivation(featDoc(name, opts), opts.activation);
+}
+
+function featDoc(name, { img, kind = "feat", subtype = "", requirements = "", description, activation, usesData, acts = [] }) {
   return {
     name, type: "feat", img,
     system: {
@@ -19,7 +23,10 @@ function feat(name, { img, kind = "feat", subtype = "", requirements = "", descr
 export const RASGOS_RACIALES = {
   migurd: ["Telepatía Migurd", "Juventud Eterna", "Visión en la Oscuridad"],
   superd: ["Tercer Ojo", "Maestría con la Lanza Superd", "Estigma de los Superd"],
-  bestia: ["Sentidos Salvajes", "Garras y Colmillos", "Agilidad Felina"],
+  dedorudia: ["Sentidos Salvajes", "Garras y Colmillos", "Agilidad Felina"],
+  adorudia: ["Sentidos Salvajes", "Olfato del Rastreador", "Lealtad de la Manada"],
+  mirudetto: ["Oídos de Conejo", "Salto del Conejo", "Pies Ligeros"],
+  hobbit: ["Suerte del Pequeño", "Paso Ágil", "Apariencia Inocente"],
   elfo: ["Afinidad con el Viento", "Longevidad Élfica", "Visión en la Oscuridad"],
   enano: ["Resistencia Enana", "Artesano de la Piedra", "Visión en la Oscuridad"]
 };
@@ -52,32 +59,32 @@ export default [
   }),
 
   // ──────────────────────── ESTILOS DE ESPADA ────────────────────────
-  feat("Estilo del Dios de la Espada", {
+  feat("Estilo Filo Celestial", {
     img: "icons/svg/sword.svg", requirements: "Competencia con armas marciales",
     usesData: uses("@prof", "lr"),
     description: html(
-      "<p>El estilo más practicado del mundo: <strong>atacar primero y terminar el combate con un único golpe</strong>. Su técnica secreta es el <em>Corte Veloz como la Luz</em>.</p>",
+      "<p><em>(Estilo del Dios de la Espada.)</em> El estilo más practicado del mundo: <strong>atacar primero y terminar el combate con un único golpe</strong>. Su técnica secreta es el <em>Corte Veloz como la Luz</em>.</p>",
       "<ul><li>Sumas tu bonificador por competencia a las tiradas de iniciativa.</li><li><strong>Corte Veloz como la Luz.</strong> Durante el primer turno de cada combate, tu primer ataque con un arma cuerpo a cuerpo tiene ventaja e inflige <strong>2d8 de daño adicional</strong> si impacta. Además, un número de veces igual a tu bonificador por competencia por descanso largo puedes aplicar ese daño adicional a un ataque con arma fuera del primer turno.</li></ul>",
-      "<p><strong>Rangos sugeridos:</strong> Principiante (nv 1–4), Intermedio (nv 5–8), Avanzado (nv 9–12), Santo (nv 13–16), Rey/Emperador (nv 17–20).</p>"
+      "<p><strong>Niveles sugeridos:</strong> Básico / Iniciado (nv 1–4), Intermedio / Experimentado (nv 5–8), Avanzado / Experto (nv 9–12), Superior / Santo-Maestro (nv 13–16), Real e Imperial (nv 17–20). El nivel Deidad queda para PNJ legendarios.</p>"
     ),
-    acts: [n => utilityActivity(n, { name: "Corte Veloz como la Luz", formula: "2d8", rollName: "Daño adicional", consumption: consumeUse })]
+    acts: [n => utilityActivity(n, { name: "Corte Veloz como la Luz", activation: act("special"), formula: "2d8", rollName: "Daño adicional", consumption: consumeUse })]
   }),
-  feat("Estilo del Dios del Agua", {
+  feat("Estilo Cauce Celestial", {
     img: "icons/svg/shield.svg", requirements: "Competencia con armas marciales",
     activation: act("reaction", 1, "cuando una criatura que puedas ver te ataque cuerpo a cuerpo"),
     usesData: uses("@prof", "sr"),
     description: html(
-      "<p>El estilo de la <strong>defensa absoluta y el contraataque</strong>. No toma la iniciativa: espera, desvía y devuelve la fuerza del enemigo contra él.</p>",
+      "<p><em>(Estilo del Dios del Agua.)</em> El estilo de la <strong>defensa absoluta y el contraataque</strong>. No toma la iniciativa: espera, desvía y devuelve la fuerza del enemigo contra él.</p>",
       "<ul><li>Mientras empuñes un arma cuerpo a cuerpo y no te muevas más de la mitad de tu velocidad en tu turno, obtienes +1 a la CA.</li><li><strong>Flujo Desviado.</strong> Como reacción cuando una criatura te ataca cuerpo a cuerpo, sumas tu bonificador por competencia a tu CA contra ese ataque. Si falla, puedes hacer de inmediato un ataque cuerpo a cuerpo contra ella. Usos: tu bonificador por competencia por descanso corto.</li></ul>",
       "<p>Los espadachines de este estilo son especialmente buscados como guardaespaldas en el Reino de Asura.</p>"
     ),
     acts: [n => utilityActivity(n, { name: "Flujo Desviado", consumption: consumeUse })]
   }),
-  feat("Estilo del Dios del Norte", {
+  feat("Estilo Nórdico Celestial", {
     img: "icons/svg/daze.svg", requirements: "Destreza o Fuerza 13",
     activation: act("bonus"),
     description: html(
-      "<p>Un estilo <strong>práctico, impredecible y sin escrúpulos</strong>. Cualquier arma, cualquier truco, cualquier terreno: lo que importa es sobrevivir y ganar.</p>",
+      "<p><em>(Estilo del Dios del Norte.)</em> Un estilo <strong>práctico, impredecible y sin escrúpulos</strong>. Cualquier arma, cualquier truco, cualquier terreno: lo que importa es sobrevivir y ganar.</p>",
       "<ul><li>Eres competente con las armas improvisadas y puedes usar Destreza en lugar de Fuerza con ellas.</li><li><strong>Truco Sucio.</strong> Como acción adicional, elige una criatura a 5 pies: debe superar una salvación de Sabiduría (CD 8 + tu bonificador por competencia + tu modificador de Destreza o Fuerza) o tu siguiente ataque contra ella antes del final de tu turno tiene ventaja.</li><li>Tienes ventaja en las pruebas para evitar ser derribado o apresado.</li></ul>"
     ),
     acts: [n => saveActivity(n, { ability: "wis", onSave: "none", parts: [], name: "Truco Sucio", dc: "8 + @prof + max(@abilities.dex.mod, @abilities.str.mod)", activation: act("bonus") })]
@@ -96,7 +103,7 @@ export default [
 
   // ──────────────────────── OJOS DEMONÍACOS ────────────────────────
   feat("Ojo Demoníaco de la Previsión", {
-    img: "icons/svg/eye.svg", requirements: "Otorgado por la Emperatriz Demoníaca o por la historia de la campaña",
+    img: "icons/svg/eye.svg", requirements: "Otorgado por la historia de la campaña",
     activation: act("reaction", 1, "cuando seas objetivo de un ataque"),
     usesData: uses("@prof", "lr"),
     description: html(
@@ -172,6 +179,41 @@ export default [
     description: html("Cuando te mueves en tu turno, puedes duplicar tu velocidad hasta el final del turno. Tras hacerlo, no puedes volver a usarlo hasta terminar un descanso corto o largo. Además, no sufres daño por caídas de 20 pies o menos."),
     acts: [n => utilityActivity(n, { consumption: consumeUse })]
   }),
+  feat("Olfato del Rastreador", {
+    img: "icons/svg/eye.svg", kind: "race",
+    description: html("Tu nariz es aún mejor que la de otros hombres bestia. Eres competente en Sabiduría (Supervivencia). Puedes identificar por el olor a cualquier criatura que hayas olido antes, y sabes si alguien a 30 pies está asustado, herido o mintiendo (ventaja en Sabiduría (Perspicacia) contra él).")
+  }),
+  feat("Lealtad de la Manada", {
+    img: "icons/svg/shield.svg", kind: "race",
+    activation: act("bonus"),
+    description: html("Puedes realizar la acción de <strong>Ayudar</strong> como acción adicional, siempre que el aliado al que ayudas esté a 5 pies de ti. Además, tienes ventaja en las salvaciones contra quedar <em>Asustado</em> mientras un aliado esté a 30 pies de ti.")
+  }),
+  feat("Oídos de Conejo", {
+    img: "icons/svg/eye.svg", kind: "race",
+    description: html("Tus largas orejas captan el menor sonido. Eres competente en Sabiduría (Percepción), tienes ventaja en las pruebas de Percepción basadas en el oído, y no puedes ser sorprendido por criaturas que hagan ruido a 60 pies de ti, aunque no las veas.")
+  }),
+  feat("Salto del Conejo", {
+    img: "icons/svg/wing.svg", kind: "race",
+    description: html("Tu distancia de salto (largo y alto) se duplica y siempre puedes saltar como si hubieras cogido carrerilla. Cuando caes, reduces el daño por caída en 5 × tu nivel.")
+  }),
+  feat("Pies Ligeros", {
+    img: "icons/svg/wing.svg", kind: "race",
+    activation: act("bonus"), usesData: uses("@prof", "lr"),
+    description: html("Como acción adicional puedes realizar la acción de <strong>Destrabarse</strong> o <strong>Correr</strong>. Usos: tu bonificador por competencia por descanso largo."),
+    acts: [n => utilityActivity(n, { consumption: consumeUse })]
+  }),
+  feat("Suerte del Pequeño", {
+    img: "icons/svg/sun.svg", kind: "race",
+    description: html("Cuando sacas un 1 natural en una tirada de ataque, prueba de característica o salvación, puedes repetir el dado y debes usar el nuevo resultado.")
+  }),
+  feat("Paso Ágil", {
+    img: "icons/svg/wing.svg", kind: "race",
+    description: html("Puedes moverte a través del espacio de cualquier criatura que sea de un tamaño mayor que el tuyo. Puedes intentar esconderte incluso cuando solo te oculta una criatura al menos un tamaño mayor que tú.")
+  }),
+  feat("Apariencia Inocente", {
+    img: "icons/svg/sun.svg", kind: "race",
+    description: html("Tu <em>cuerpo de niño</em> engaña a todos: aunque seas adulto, la gente te toma por un crío. Tienes ventaja en las pruebas de Carisma (Engaño) y (Persuasión) para que te subestimen o te dejen pasar, y los guardias rara vez te registran.")
+  }),
   feat("Afinidad con el Viento", {
     img: "icons/svg/wing.svg", kind: "race",
     description: html("Conoces el truco <em>Cuchilla de Viento</em> (o cualquier otro truco de viento). Cuando lanzas un conjuro que inflija daño cortante o mueva criaturas mediante el viento, puedes sumar tu modificador de Sabiduría al daño de una de sus tiradas (mínimo +1). Eres competente en arcos largos y cortos.")
@@ -186,6 +228,6 @@ export default [
   }),
   feat("Artesano de la Piedra", {
     img: "icons/svg/statue.svg", kind: "race",
-    description: html("Eres competente con herramientas de herrero o de albañil (a tu elección). Cuando haces una prueba de Inteligencia (Historia) sobre trabajos en piedra o metal, añades el doble de tu bonificador por competencia. Conoces el truco <em>Bala de Piedra</em>; la Constitución es tu característica para lanzarlo.")
+    description: html("Eres competente con herramientas de herrero o de minero/albañil (a tu elección). Los enanos de este mundo son conocidos como <em>Mineros de Carbón</em>. Cuando haces una prueba de Inteligencia (Historia) sobre trabajos en piedra o metal, añades el doble de tu bonificador por competencia. Conoces el truco <em>Bala de Piedra</em>; la Constitución es tu característica para lanzarlo.")
   })
 ];

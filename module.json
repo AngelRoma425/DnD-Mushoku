@@ -1,24 +1,152 @@
 {
   "id": "mushoku-tensei-dnd",
   "title": "Mushoku Tensei para D&D 5e",
-  "description": "Contenido homebrew inspirado en Mushoku Tensei para el sistema dnd5e: hechizos por rangos, estilos de espada, Toki, ojos demoníacos, razas, objetos, bestiario y una guía del mundo.",
-  "version": "0.1.0",
-  "authors": [{ "name": "AngelRoma425" }],
-  "compatibility": { "minimum": "12", "verified": "13" },
+  "description": "Contenido homebrew inspirado en Mushoku Tensei para dnd5e (reglas 2014): hechizos por niveles, estilos Filo/Cauce/Nórdico Celestial, Toki, ojos demoníacos, razas, objetos, bestiario, guía del mundo y el material del DM de la campaña «Anomalía».",
+  "version": "0.2.0",
+  "authors": [
+    {
+      "name": "AngelRoma425"
+    }
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
   "relationships": {
-    "systems": [{ "id": "dnd5e", "type": "system", "compatibility": { "minimum": "4.0.0" } }]
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "4.0.0"
+        }
+      }
+    ]
   },
   "languages": [],
   "packs": [
-    { "name": "mt-guia", "label": "MT · Guía del Mundo", "path": "packs/mt-guia", "type": "JournalEntry", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
-    { "name": "mt-hechizos", "label": "MT · Hechizos", "path": "packs/mt-hechizos", "type": "Item", "system": "dnd5e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
-    { "name": "mt-rasgos", "label": "MT · Rasgos y Dotes", "path": "packs/mt-rasgos", "type": "Item", "system": "dnd5e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
-    { "name": "mt-razas", "label": "MT · Razas", "path": "packs/mt-razas", "type": "Item", "system": "dnd5e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
-    { "name": "mt-objetos", "label": "MT · Objetos", "path": "packs/mt-objetos", "type": "Item", "system": "dnd5e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
-    { "name": "mt-bestiario", "label": "MT · Bestiario", "path": "packs/mt-bestiario", "type": "Actor", "system": "dnd5e", "ownership": { "PLAYER": "NONE", "ASSISTANT": "OWNER" } }
+    {
+      "name": "mt-guia",
+      "label": "MT · Guía del Mundo",
+      "path": "packs/mt-guia",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "mt-hechizos",
+      "label": "MT · Hechizos",
+      "path": "packs/mt-hechizos",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "mt-rasgos",
+      "label": "MT · Rasgos y Dotes",
+      "path": "packs/mt-rasgos",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "mt-razas",
+      "label": "MT · Razas",
+      "path": "packs/mt-razas",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "mt-objetos",
+      "label": "MT · Objetos",
+      "path": "packs/mt-objetos",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "mt-bestiario",
+      "label": "MT · Bestiario",
+      "path": "packs/mt-bestiario",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "mt-campana",
+      "label": "MT · Campaña: Anomalía",
+      "path": "packs/mt-campana",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "mt-campana-objetos",
+      "label": "MT · Objetos de Campaña",
+      "path": "packs/mt-campana-objetos",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "mt-anomalias",
+      "label": "MT · Anomalías",
+      "path": "packs/mt-anomalias",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    }
   ],
   "packFolders": [
-    { "name": "Mushoku Tensei", "sorting": "m", "color": "#1f4e79", "packs": ["mt-guia", "mt-hechizos", "mt-rasgos", "mt-razas", "mt-objetos", "mt-bestiario"] }
+    {
+      "name": "Mushoku Tensei",
+      "sorting": "m",
+      "color": "#1f4e79",
+      "packs": [
+        "mt-guia",
+        "mt-hechizos",
+        "mt-rasgos",
+        "mt-razas",
+        "mt-objetos",
+        "mt-bestiario"
+      ]
+    },
+    {
+      "name": "Campaña: Anomalía (DM)",
+      "sorting": "m",
+      "color": "#6b1f3a",
+      "packs": [
+        "mt-campana",
+        "mt-campana-objetos",
+        "mt-anomalias"
+      ]
+    }
   ],
   "url": "https://github.com/AngelRoma425/DnD-Mushoku",
   "manifest": "https://raw.githubusercontent.com/AngelRoma425/DnD-Mushoku/main/module.json",

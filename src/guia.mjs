@@ -1,136 +1,165 @@
-// Guía del mundo y reglas de ambientación (JournalEntry).
+// Guía del mundo y reglas de ambientación (JournalEntry), con la terminología de la campaña.
 import { uuid } from "../tools/helpers.mjs";
 
 const link = (pack, type, name, label = name) => `@UUID[${uuid(pack, type, name)}]{${label}}`;
-
 const table = (head, rows) =>
   `<table><thead><tr>${head.map(h => `<th>${h}</th>`).join("")}</tr></thead><tbody>${rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
 
 const paginas = [
   ["Bienvenida", `
 <h1>Mushoku Tensei para D&amp;D 5e</h1>
-<p>Este módulo adapta la ambientación de <em>Mushoku Tensei</em> al sistema <strong>dnd5e</strong> de Foundry VTT. Es material <strong>homebrew de fans</strong> para uso en mesa privada: las mecánicas son originales y están pensadas para encajar con las reglas de 5e sin romper el equilibrio.</p>
-<h2>¿Qué incluye?</h2>
+<p>Este módulo adapta el <strong>Mundo de las Seis Caras</strong> de <em>Mushoku Tensei</em> al sistema <strong>dnd5e</strong> (reglas de 2014) de Foundry VTT. Es material <strong>homebrew de fans</strong> para mesa privada.</p>
+<p>La ambientación se sitúa <strong>varias generaciones después de Rudeus Greyrat</strong>: hoy viven sus tataranietos, la guerra contra los apóstoles del Dios Humano es una leyenda urbana y, tras décadas de paz, cada vez hay menos aventureros.</p>
+<h2>Compendios</h2>
 <ul>
-  <li><strong>Hechizos de Mushoku</strong>: magia de ataque de Agua, Fuego, Tierra y Viento, Curación, Desintoxicación, Barrera y combinadas, del rango Principiante al Rey.</li>
-  <li><strong>Rasgos y Dotes</strong>: Lanzamiento sin Encantamiento, los tres grandes estilos de espada, Toki y Ojos Demoníacos.</li>
-  <li><strong>Razas</strong>: Migurd, Superd, Bestia, Elfo y Enano, listas para arrastrar a la hoja de personaje.</li>
-  <li><strong>Objetos</strong>: bastones, piedras mágicas, pergaminos de círculo mágico y las monedas de cada región.</li>
-  <li><strong>Bestiario</strong>: monstruos y PNJ típicos (gremio, magos, caballeros de Millis, espadachines).</li>
+  <li><strong>MT · Guía del Mundo</strong> (este diario): mundo, magia, estilos de espada, razas, idiomas, gremio y monedas.</li>
+  <li><strong>MT · Hechizos</strong>, <strong>MT · Rasgos y Dotes</strong>, <strong>MT · Razas</strong>, <strong>MT · Objetos</strong> y <strong>MT · Bestiario</strong>: contenido general para cualquier campaña.</li>
+  <li><strong>MT · Campaña: Anomalía</strong>, <strong>MT · Objetos de Campaña</strong> y <strong>MT · Anomalías</strong>: material del DM para la campaña <em>Anomalía</em> (los jugadores no los ven).</li>
 </ul>
 <h2>Consejos rápidos</h2>
 <ul>
-  <li>Los humanos usan las reglas normales del manual; las razas de este módulo son para los demás pueblos.</li>
-  <li>Las clases de 5e encajan bien: <strong>mago</strong> y <strong>hechicero</strong> para magos, <strong>clérigo</strong> para curanderos de Millis, <strong>guerrero</strong>, <strong>pícaro</strong> y <strong>monje</strong> para espadachines con Toki.</li>
-  <li>Arrastra cualquier hechizo o dote del compendio a la hoja del personaje. Las razas añaden sus rasgos automáticamente.</li>
+  <li>Los humanos usan las reglas del manual; las razas del módulo son para los demás pueblos.</li>
+  <li>Clases sugeridas: <strong>mago</strong> y <strong>hechicero</strong> para magos; <strong>clérigo</strong> para curanderos de Milis; <strong>guerrero</strong>, <strong>pícaro</strong>, <strong>bardo (Colegio de las Espadas)</strong> y <strong>monje</strong> para espadachines con Toki.</li>
+  <li>Arrastra cualquier hechizo, dote u objeto del compendio a la hoja. Las razas añaden sus rasgos automáticamente.</li>
 </ul>`],
 
   ["El Mundo", `
-<h1>El Mundo de los Seis Continentes</h1>
-<p>El mundo está dividido por un gran océano y por la cordillera del <strong>Pico del Dragón Rojo</strong>, que corta el Continente Central. Cada región tiene su dios patrón, su idioma y su moneda.</p>
-${table(["Región", "Descripción", "Idioma"], [
-  ["<strong>Continente Central</strong>", "El corazón de la civilización humana. Al oeste está el rico <strong>Reino de Asura</strong>; al norte, los <strong>Territorios del Norte</strong> (Ranoa, Basherant, Neris), donde se encuentra la Universidad de Magia; al sur, zonas en guerra constante.", "Dios Humano"],
-  ["<strong>Continente de Millis</strong>", "Sede de la <strong>Sagrada Iglesia de Millis</strong> y del Gran Bosque de los hombres bestia. Religioso, ordenado y con fuerte influencia política.", "Dios Humano / Dios Bestia"],
-  ["<strong>Continente Demoníaco</strong>", "Tierra árida y peligrosa de las razas demoníacas. Los monstruos son mucho más fuertes y no hay monedas: se comercia con piedras.", "Dios Demonio"],
-  ["<strong>Continente de Begaritt</strong>", "Un desierto lleno de laberintos con monstruos y tesoros. Solo los aventureros más audaces lo cruzan.", "Dios Lucha"],
-  ["<strong>Continente Celestial</strong>", "Una meseta altísima, casi inaccesible, hogar de la Tribu del Cielo.", "Dios del Cielo"],
-  ["<strong>Mar del Anillo</strong>", "El océano entre continentes, dominado por la raza del mar. Cruzarlo requiere permisos y barco.", "Dios del Mar"]
+<h1>El Mundo de las Seis Caras</h1>
+<h2>Continente Central</h2>
+<p>Dividido en tres partes por la <strong>Cordillera del Dragón Rojo</strong>: el norte, pobre y en guerra constante; el <strong>Reino de Asura</strong> al oeste, una de las regiones más ricas del mundo; y el sur, donde grandes países luchan siempre por el poder. La raza humana es la mayoría.</p>
+${table(["Lugar", "Descripción"], [
+  ["<strong>Reino de Asura</strong>", "El país con mayor poder nacional del mundo. Abundante en recursos, tierra fértil sin hambrunas."],
+  ["<strong>Región de Fittoa</strong>", "Al noreste de Asura. Productos típicos: la cebada asurana y las flores de Batirusu. Aquí empieza la campaña."],
+  ["<strong>Mandíbula Inferior y Superior del Dragón Rojo</strong>", "Los únicos valles transitables de la Cordillera del Dragón Rojo."],
+  ["<strong>Reino del Rey Dragón</strong>", "El tercer país del mundo, con un amplio territorio en el sur."],
+  ["<strong>Puerto Oeste y Puerto Este</strong>", "Ciudades portuarias que conectan el Continente Central con el de Milis."],
+  ["<strong>Reino de Shirone</strong>", "Aliado del Reino del Rey Dragón, en la frontera de la zona de conflicto."],
+  ["<strong>Reino de Sanakia</strong>", "Vasallo del Rey Dragón. Especialidad: el arroz."],
+  ["<strong>Reino de Kikka</strong>", "Vasallo del Rey Dragón. Especialidad: el aceite."],
+  ["<strong>Zona de Conflicto</strong>", "Donde los grandes países no hacen más que escaramuzas."]
 ])}
-<h2>Ganchos de campaña</h2>
-<ul>
-  <li><strong>Un desastre mágico</strong> teletransporta a toda una región a puntos aleatorios del mundo. Los PJ despiertan en un continente desconocido y deben volver a casa.</li>
-  <li><strong>Tutor de magia</strong>: un PJ es contratado para educar al hijo de una familia noble de Asura, y queda atrapado en la intriga de la corte.</li>
-  <li><strong>El Gremio</strong>: un grupo de rango F intenta ascender a S mientras viaja entre continentes.</li>
-  <li><strong>Laberinto de Begaritt</strong>: una expedición busca un tesoro capaz de curar una maldición.</li>
-</ul>`],
+<h2>Continente Demoníaco</h2>
+<p>Pobre y con monstruos fuertes. Varios <strong>Señores Demonio</strong> gobiernan distintas zonas. La mayoría de la población son razas mágicas.</p>
+${table(["Lugar", "Descripción"], [
+  ["<strong>Rikarisu</strong>", "Antiguo castillo de la Gran Emperatriz Demonio Kishirika Kishirisu, en el centro de un gran cráter. Lo gobierna el Señor Demonio Badigadi."],
+  ["<strong>Kurasuma</strong>", "La única ciudad donde el continente comercia con la Raza del Mar. La gobierna el Señor Demonio Bagurahagura."],
+  ["<strong>Puerto del Viento y Puerto Santo</strong>", "Conectan el Continente de Milis con el Demoníaco."]
+])}
+<h2>Continente de Milis</h2>
+<p>Al norte, el <strong>Gran Bosque</strong>; al sur, el <strong>Sagrado Reino de Milis</strong>. Los separa la <strong>Cordillera del Dragón Azul</strong>, atravesada de norte a sur por la <strong>Carretera de la Espada Sagrada</strong>, libre de monstruos. La población es mitad humana y mitad raza feral.</p>
+${table(["Lugar", "Descripción"], [
+  ["<strong>Gran Bosque</strong>", "Hogar de las razas ferales. Cada año tiene tres meses de temporada de lluvias."],
+  ["<strong>Sagrado Reino de Milis</strong>", "El segundo país del mundo. Sede de la Iglesia de Milis y del Gremio de Aventureros. Su capital es Milishion."]
+])}
+<h2>Otros continentes</h2>
+${table(["Continente", "Descripción"], [
+  ["<strong>Begaritt</strong>", "Lleno de laberintos y de fenómenos extraños de poder mágico. Sus monstruos son tan fuertes como los del Demoníaco. Viven allí muchas razas, casi todos aventureros o ex aventureros."],
+  ["<strong>Continente Celestial</strong>", "Una meseta a 3000 metros sobre el nivel del mar, hogar de la Raza Celestial."]
+])}`],
 
   ["Sistema de Magia", `
 <h1>El Sistema de Magia</h1>
-<p>En este mundo la magia no es un don de unos pocos: todos tienen <strong>maná</strong>, pero la cantidad varía muchísimo. Lo que marca la diferencia es la <strong>capacidad de maná</strong> (que crece si se entrena de niño) y el dominio del encantamiento.</p>
-<h2>Rangos de magia</h2>
-<p>Cada escuela clasifica sus hechizos en siete rangos. Usa esta tabla para traducirlos a niveles de conjuro de 5e:</p>
-${table(["Rango", "Nivel de conjuro 5e", "Nivel de personaje aprox.", "Ejemplo"], [
-  ["Principiante", "Truco y 1.º", "1–2", link("mt-hechizos", "Item", "Bola de Agua")],
-  ["Intermedio", "2.º–3.º", "3–6", link("mt-hechizos", "Item", "Cañón de Piedra")],
-  ["Avanzado", "4.º–5.º", "7–10", link("mt-hechizos", "Item", "Tornado")],
-  ["Santo", "6.º", "11–12", link("mt-hechizos", "Item", "Cumulonimbo")],
-  ["Rey", "7.º", "13–14", link("mt-hechizos", "Item", "Cero Absoluto")],
-  ["Emperador", "8.º", "15–16", "—"],
-  ["Dios", "9.º", "17+", "— (legendario)"]
+<p>Todos tienen <strong>maná</strong>, pero la cantidad varía muchísimo. Lo que marca la diferencia es la <strong>capacidad de maná</strong> (que crece si se entrena de niño) y el dominio del encantamiento.</p>
+<h2>Niveles de los hechizos</h2>
+<p>Los hechizos se nombran así: <em>«Hechizo de Agua de nivel Básico»</em>. Esta tabla los traduce a 5e:</p>
+${table(["Nivel", "Original", "Nivel de conjuro 5e", "Nivel de PJ aprox.", "Ejemplo"], [
+  ["Básico", "Elementary", "Truco y 1.º", "1–2", link("mt-hechizos", "Item", "Bola de Agua")],
+  ["Intermedio", "Intermediate", "2.º–3.º", "3–6", link("mt-hechizos", "Item", "Cañón de Piedra")],
+  ["Avanzado", "Advanced", "4.º–5.º", "7–10", link("mt-hechizos", "Item", "Tornado")],
+  ["Superior", "Saint", "6.º", "11–12", link("mt-hechizos", "Item", "Cumulonimbo")],
+  ["Real", "King", "7.º", "13–14", link("mt-hechizos", "Item", "Cero Absoluto")],
+  ["Imperial", "Emperor", "8.º", "15–16", "—"],
+  ["Deidad", "God", "9.º", "17+", "— (legendario)"]
 ])}
-<p>Un mago que domina una escuela a rango Santo se suele llamar <em>«Santo del Agua»</em>, <em>«Santo del Fuego»</em>, etc. Es buena idea darle a los PJ estos títulos cuando lleguen al nivel correspondiente: es parte del sabor del mundo.</p>
 <h2>Escuelas</h2>
 <ul>
   <li><strong>Magia de ataque</strong>: Fuego, Agua, Viento y Tierra (y combinaciones como Niebla Profunda o Lodazal).</li>
-  <li><strong>Magia sanadora</strong>: Curación, Desintoxicación, Barrera. Asociada a la Iglesia de Millis.</li>
+  <li><strong>Magia sanadora</strong>: Curación, Desintoxicación y Barrera. Asociada a la Iglesia de Milis.</li>
   <li><strong>Magia de invocación</strong>: círculos mágicos y espíritus. Rara y regulada.</li>
-  <li><strong>Magia especial</strong>: gravedad, teletransporte, sellado... casi perdidas.</li>
+  <li><strong>Magia especial</strong>: gravedad, teletransporte, sellado, viaje en el tiempo… casi perdidas.</li>
 </ul>
 <h2>Encantamientos</h2>
-<p>Los hechizos se lanzan recitando un <strong>encantamiento</strong> (componente verbal). Las descripciones incluyen ejemplos que los jugadores pueden recitar en voz alta. Quien tenga la dote ${link("mt-rasgos", "Item", "Lanzamiento sin Encantamiento")} puede saltárselos.</p>
+<p>Los hechizos se lanzan recitando un <strong>encantamiento</strong> (componente verbal). Las descripciones incluyen ejemplos para recitar en voz alta. Quien tenga ${link("mt-rasgos", "Item", "Lanzamiento sin Encantamiento")} puede saltárselos.</p>
 <h2>Variante opcional: Puntos de Maná</h2>
-<p>Si queréis reflejar mejor la idea de «capacidad de maná», usad la variante de <strong>puntos de conjuro</strong> de la Guía del DM: cada nivel de espacio cuesta puntos en lugar de espacios.</p>
+<p>Para reflejar la «capacidad de maná», usad la variante de <strong>puntos de conjuro</strong> de la Guía del DM (2014): cada nivel de espacio cuesta puntos en lugar de espacios.</p>
 ${table(["Nivel de espacio", "1.º", "2.º", "3.º", "4.º", "5.º", "6.º", "7.º", "8.º", "9.º"], [
   ["Coste en puntos", "2", "3", "5", "6", "7", "9", "10", "11", "13"]
 ])}
-<p>Un PJ con ${link("mt-rasgos", "Item", "Reserva de Maná Desbordante")} suma su nivel de personaje a su máximo de puntos. Gastar más de la mitad de los puntos en un mismo combate puede causar un nivel de <em>Agotamiento</em> (opcional).</p>`],
+<p>Un PJ con ${link("mt-rasgos", "Item", "Reserva de Maná Desbordante")} suma su nivel de personaje a su máximo de puntos.</p>`],
 
   ["Estilos de Espada", `
 <h1>Los Tres Grandes Estilos</h1>
-<p>Casi todos los espadachines del mundo practican uno de estos tres estilos, cada uno con su propio dojo y jerarquía. Se representan con dotes; recomendamos que un PJ marcial pueda escoger una gratis a nivel 1.</p>
-${table(["Estilo", "Filosofía", "Dote"], [
-  ["Dios de la Espada", "Velocidad absoluta, atacar primero.", link("mt-rasgos", "Item", "Estilo del Dios de la Espada")],
-  ["Dios del Agua", "Defensa perfecta y contraataque.", link("mt-rasgos", "Item", "Estilo del Dios del Agua")],
-  ["Dios del Norte", "Pragmático, impredecible, cualquier arma.", link("mt-rasgos", "Item", "Estilo del Dios del Norte")]
+<p>Casi todos los espadachines practican uno de estos tres estilos. Se representan con dotes; recomendamos que un PJ marcial pueda escoger una gratis a nivel 1.</p>
+${table(["Estilo", "Original", "Filosofía", "Dote"], [
+  ["Estilo Filo Celestial", "Sword God Style", "Velocidad absoluta, atacar primero.", link("mt-rasgos", "Item", "Estilo Filo Celestial")],
+  ["Estilo Cauce Celestial", "Water God Style", "Defensa perfecta y contraataque.", link("mt-rasgos", "Item", "Estilo Cauce Celestial")],
+  ["Estilo Nórdico Celestial", "North God Style", "Pragmático, impredecible, cualquier arma.", link("mt-rasgos", "Item", "Estilo Nórdico Celestial")]
 ])}
-<h2>Rangos de espadachín</h2>
-<p>Como la magia, la esgrima tiene rangos: <strong>Principiante, Intermedio, Avanzado, Santo, Rey, Emperador y Dios</strong>. Usa la misma correspondencia de nivel de personaje que la tabla de magia. Un Santo de la Espada (nivel 11+) es alguien conocido en todo el reino.</p>
-<h2>Toki</h2>
-<p>Los guerreros que no pueden lanzar magia externa envuelven su cuerpo en un aura de maná llamada ${link("mt-rasgos", "Item", "Toki (Aura de Combate)")}. Es lo que permite a un espadachín sobrevivir a una caída o a una explosión. Los PNJ marciales de nivel alto lo tienen siempre activo.</p>`],
+<h2>Niveles de técnica y títulos</h2>
+${table(["Nivel de técnica", "Título", "Nivel de PJ sugerido"], [
+  ["Básico", "Iniciado", "1–4"],
+  ["Intermedio", "Experimentado", "5–8"],
+  ["Avanzado", "Experto", "9–12"],
+  ["Superior", "Santo / Maestro", "13–16"],
+  ["Real", "Rey", "17–18"],
+  ["Imperial", "Emperador", "19–20"],
+  ["Deidad", "Dios", "PNJ legendarios"]
+])}
+<p>Así, un espadachín de nivel Superior del Estilo Filo Celestial es un <em>«Santo del Filo Celestial»</em>.</p>
+<h2>Toki y aura de batalla</h2>
+<p>Los guerreros que no pueden lanzar magia externa envuelven su cuerpo en un aura de maná: el ${link("mt-rasgos", "Item", "Toki (Aura de Combate)")}. Los dracónidos tienen su propia variante, el <em>aura de batalla dracónida</em>.</p>`],
 
-  ["Razas", `
+  ["Razas e Idiomas", `
 <h1>Razas del Mundo</h1>
-<p>Los humanos son la mayoría y usan las reglas del manual. Estas son las razas incluidas:</p>
-<ul>
-  <li>${link("mt-razas", "Item", "Migurd")}: demonios pacíficos de pelo azul, telépatas y eternamente jóvenes.</li>
-  <li>${link("mt-razas", "Item", "Superd")}: guerreros de pelo verde con una gema en la frente; temidos por una antigua leyenda.</li>
-  <li>${link("mt-razas", "Item", "Bestia (Tribu Dedoldia)")}: hombres bestia del Gran Bosque, con sentidos agudos.</li>
-  <li>${link("mt-razas", "Item", "Elfo (Orejas Largas)")}: longevos, arqueros y con afinidad al viento.</li>
-  <li>${link("mt-razas", "Item", "Enano")}: herreros y magos de tierra.</li>
-</ul>
+${table(["Grupo", "Raza", "Compendio"], [
+  ["Humanoides", "Humanos", "Reglas del manual"],
+  ["Humanoides", "Orejas Puntiagudas (Elfos)", link("mt-razas", "Item", "Orejas Puntiagudas (Elfo)")],
+  ["Humanoides", "Mineros de Carbón (Enanos)", link("mt-razas", "Item", "Mineros de Carbón (Enano)")],
+  ["Humanoides", "Cuerpo de Niño (Hobbits)", link("mt-razas", "Item", "Cuerpo de Niño (Hobbit)")],
+  ["Razas ferales", "Dedorudia (hombre-gato)", link("mt-razas", "Item", "Dedorudia (Hombre-gato)")],
+  ["Razas ferales", "Adorudia (hombre-perro)", link("mt-razas", "Item", "Adorudia (Hombre-perro)")],
+  ["Razas ferales", "Mirudetto (hombre-conejo)", link("mt-razas", "Item", "Mirudetto (Hombre-conejo)")],
+  ["Razas mágicas", "Tribu de cabello azul (Migurd)", link("mt-razas", "Item", "Migurd (Tribu de Cabello Azul)")],
+  ["Razas mágicas", "Tribu de cabello verde (Superd)", link("mt-razas", "Item", "Superd (Tribu de Cabello Verde)")]
+])}
 <h2>Prejuicios</h2>
-<p>El racismo es un tema central de la ambientación. En Millis, las razas demoníacas son vistas con desconfianza; en el Continente Demoníaco, los humanos son una rareza. Úsalo para dar peso a las decisiones de los PJ, no para castigarlos.</p>
+<p>El racismo es un tema central de la ambientación. En Milis las razas mágicas son vistas con desconfianza; en el Continente Demoníaco los humanos son una rareza; y los Superd cargan con el miedo de todo el mundo.</p>
 <h2>Idiomas</h2>
-${table(["Idioma", "Hablado en"], [
-  ["Dios Humano (Común)", "Continente Central y Millis"],
-  ["Dios Demonio", "Continente Demoníaco"],
-  ["Dios Bestia", "Gran Bosque"],
-  ["Dios Lucha", "Begaritt"],
-  ["Dios del Mar / Dios del Cielo", "Raza del mar / Tribu del Cielo"]
+<p>Cada idioma usa uno de los idiomas de 5e en la hoja de personaje:</p>
+${table(["Idioma del mundo", "Dónde se habla", "Idioma en la hoja (5e)"], [
+  ["Idioma Humano", "Continente Central", "Común"],
+  ["Idioma del Dios Feral", "Continente de Milis", "Silvano"],
+  ["Idioma del Dios Celestial", "Continente Celestial", "Celestial"],
+  ["Idioma del Dios de la Lucha", "Continente de Begaritt", "Gigante"],
+  ["Idioma del Dios Demonio", "Continente Demoníaco", "Dracónico"],
+  ["Idioma del Dios Marino", "Habitantes acuáticos", "Abisal"]
 ])}`],
 
-  ["Gremio y Economía", `
+  ["Gremio y Monedas", `
 <h1>El Gremio de Aventureros</h1>
-<p>Una organización presente en todo el mundo. Cada aventurero tiene una ${link("mt-objetos", "Item", "Tarjeta de Aventurero")} y un rango; los grupos también tienen rango de equipo.</p>
-${table(["Rango", "Nivel de PJ", "Encargos típicos (VD)", "Recompensa sugerida"], [
-  ["F", "1", "Recados, recolección (VD 0–1/8)", "1–5 po"],
-  ["E", "1–2", "Coyotes, plagas (VD 1/4–1/2)", "5–15 po"],
-  ["D", "2–4", "Escoltas, monstruos sueltos (VD 1–2)", "15–50 po"],
-  ["C", "4–6", "Lobos ácidos, bandidos (VD 2–4)", "50–150 po"],
-  ["B", "6–9", "Monstruos peligrosos (VD 4–7)", "150–500 po"],
-  ["A", "9–13", "Amenazas para un pueblo (VD 7–11)", "500–2.000 po"],
-  ["S", "13+", "Amenazas para un reino (VD 12+)", "2.000+ po"]
+<p>Con sede en Milis y presente en todo el mundo. Cada aventurero tiene una ${link("mt-objetos", "Item", "Tarjeta de Aventurero")} y un rango; los grupos también tienen rango de equipo. Tras décadas de paz, el nivel de los aventureros ha bajado mucho y faltan manos.</p>
+${table(["Rango", "Nivel de PJ", "Encargos típicos (VD)"], [
+  ["F", "1", "Recados, recolección (VD 0–1/8)"],
+  ["E", "1–2", "Coyotes, plagas (VD 1/4–1/2)"],
+  ["D", "2–4", "Escoltas, monstruos sueltos (VD 1–2)"],
+  ["C", "4–6", "Lobos ácidos, bandidos (VD 2–4)"],
+  ["B", "6–9", "Monstruos peligrosos (VD 4–7)"],
+  ["A", "9–13", "Amenazas para un pueblo (VD 7–11)"],
+  ["S", "13+", "Amenazas para un reino (VD 12+)"]
 ])}
-<p>Un aventurero solo puede aceptar encargos de su rango o uno superior. Para ascender: completar un número de encargos (≈10 del rango actual) o una hazaña notable.</p>
-<h2>Monedas por región</h2>
-${table(["Moneda", "Equivalencia 5e"], [
-  [link("mt-objetos", "Item", "Moneda de Oro de Asura"), "10 po"],
-  [link("mt-objetos", "Item", "Moneda de Plata de Asura"), "1 po"],
-  [link("mt-objetos", "Item", "Moneda de Cobre de Asura"), "1 pp"],
-  ["Moneda de oro de otros reinos", "≈ 1 po (cambio con pérdida del 10–20 %)"],
-  [link("mt-objetos", "Item", "Piedra Verde (Continente Demoníaco)"), "1 pc (piedra de hierro ≈ 1 pp, cristal ≈ 1 po)"]
+<h2>Tipos de moneda</h2>
+<p>Valor de referencia en dólares. Las monedas están en el compendio de objetos.</p>
+${table(["Valor", "Monedas de Asura", "Monedas de Milis", "Monedas Demoníacas"], [
+  ["1000 $", link("mt-objetos", "Item", "Asura de Oro"), "—", "—"],
+  ["500 $", "—", link("mt-objetos", "Item", "Cheque del Papado"), "—"],
+  ["100 $", link("mt-objetos", "Item", "Asura de Plata"), link("mt-objetos", "Item", "Cheque del Ejército"), "—"],
+  ["50 $", "—", link("mt-objetos", "Item", "Milis de Oro"), "—"],
+  ["10 $", link("mt-objetos", "Item", "Gran Asura de Cobre"), link("mt-objetos", "Item", "Milis de Plata"), link("mt-objetos", "Item", "Moneda de Jade")],
+  ["1 $", link("mt-objetos", "Item", "Asura de Cobre"), link("mt-objetos", "Item", "Gran Milis de Cobre"), link("mt-objetos", "Item", "Moneda de Hierro")],
+  ["0'10 $", "—", link("mt-objetos", "Item", "Milis de Cobre"), link("mt-objetos", "Item", "Moneda Oxidada")],
+  ["0'01 $", "—", "—", link("mt-objetos", "Item", "Moneda de Piedra")]
 ])}
-<p>Cambiar dinero entre continentes es caro y lento: un buen pretexto para que los PJ tengan que trabajar al llegar a un sitio nuevo.</p>`]
+<p>Los precios de los mercaderes de la campaña se dan en «oro» y se registran en Foundry como piezas de oro (po).</p>`]
 ];
 
 export default [{

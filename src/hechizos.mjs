@@ -1,10 +1,10 @@
 // Hechizos inspirados en el sistema de magia de Mushoku Tensei.
-// Rangos: Principiante = truco/nv1 · Intermedio = nv2-3 · Avanzado = nv4-5
-//         Santo = nv6 · Rey = nv7 · Emperador = nv8 · Dios = nv9
+// Niveles: Básico = truco/nv1 · Intermedio = nv2-3 · Avanzado = nv4-5
+//          Superior = nv6 · Real = nv7 · Imperial = nv8 · Deidad = nv9
 import { SOURCE, dmg, act, activities, attackActivity, saveActivity, healActivity, utilityActivity, html } from "../tools/helpers.mjs";
 
 const rango = (r, escuela) =>
-  `<p><strong>Rango:</strong> ${r} · <strong>Escuela de Mushoku:</strong> ${escuela}</p>`;
+  `<p><strong>Hechizo de ${escuela} de nivel ${r}.</strong></p>`;
 
 const chant = texto =>
   `<blockquote><p><em>Encantamiento:</em> «${texto}»</p></blockquote>`;
@@ -35,11 +35,11 @@ const noSlot = { targets: [], scaling: { allowed: false, max: "" }, spellSlot: f
 const minutes = (value, units = "minute") => ({ value: String(value), units });
 
 export default [
-  // ────────────────────────── TRUCOS (Principiante) ──────────────────────────
+  // ────────────────────────── TRUCOS (Básico) ──────────────────────────
   spell("Bola de Agua", {
     level: 0, school: "evo", img: "icons/svg/ice-aura.svg", range: ft(60), target: one(),
     description: html(
-      rango("Principiante", "Agua"),
+      rango("Básico", "Agua"),
       chant("Que el agua se reúna en mi palma y golpee como un puño: ¡Bola de Agua!"),
       "Condensas una esfera de agua del tamaño de un melón y la lanzas. Haz un ataque de conjuro a distancia. Si impacta, el objetivo recibe <strong>1d10 de daño contundente</strong> y, si es Grande o menor, es empujado 5 pies en dirección opuesta a ti. Cualquier llama no mágica que toque la esfera se apaga.",
       "<p><strong>Mejora de truco.</strong> El daño aumenta en 1d10 a nivel 5 (2d10), 11 (3d10) y 17 (4d10).</p>"
@@ -49,7 +49,7 @@ export default [
   spell("Bala de Piedra", {
     level: 0, school: "evo", img: "icons/svg/statue.svg", range: ft(90), target: one(),
     description: html(
-      rango("Principiante", "Tierra"),
+      rango("Básico", "Tierra"),
       chant("Piedra, endurécete y vuela: ¡Bala de Piedra!"),
       "Formas un proyectil de roca compacta con punta y lo disparas a gran velocidad. Haz un ataque de conjuro a distancia. Si impacta, el objetivo recibe <strong>1d10 de daño perforante</strong>.",
       "<p><strong>Mejora de truco.</strong> 2d10 a nivel 5, 3d10 a nivel 11 y 4d10 a nivel 17.</p>",
@@ -60,7 +60,7 @@ export default [
   spell("Flecha de Fuego", {
     level: 0, school: "evo", img: "icons/svg/fire.svg", range: ft(120), target: one(),
     description: html(
-      rango("Principiante", "Fuego"),
+      rango("Básico", "Fuego"),
       chant("Fuego que arde en lo profundo, toma forma de flecha: ¡Flecha de Fuego!"),
       "Una saeta de llamas sale disparada hacia una criatura u objeto. Haz un ataque de conjuro a distancia. Si impacta, recibe <strong>1d10 de daño de fuego</strong>. Los objetos inflamables que no se lleven puestos ni se transporten se prenden.",
       "<p><strong>Mejora de truco.</strong> 2d10 a nivel 5, 3d10 a nivel 11 y 4d10 a nivel 17.</p>"
@@ -70,7 +70,7 @@ export default [
   spell("Cuchilla de Viento", {
     level: 0, school: "evo", img: "icons/svg/wing.svg", range: ft(30), target: one(),
     description: html(
-      rango("Principiante", "Viento"),
+      rango("Básico", "Viento"),
       chant("Viento que corta sin ser visto: ¡Cuchilla de Viento!"),
       "Comprimes el aire en una hoja invisible. Una criatura que puedas ver dentro del alcance debe superar una <strong>tirada de salvación de Destreza</strong> o recibir <strong>1d8 de daño cortante</strong>. Como la hoja es casi invisible, el objetivo tiene desventaja en la salvación si no te estaba mirando cuando lanzaste el conjuro.",
       "<p><strong>Mejora de truco.</strong> 2d8 a nivel 5, 3d8 a nivel 11 y 4d8 a nivel 17.</p>"
@@ -80,48 +80,48 @@ export default [
   spell("Manantial", {
     level: 0, school: "con", img: "icons/svg/aura.svg", range: ft(30), target: one("space"), duration: minutes(1, "hour"),
     description: html(
-      rango("Principiante", "Agua"),
+      rango("Básico", "Agua"),
       "El primer hechizo que aprende cualquier aprendiz de agua. Elige uno de los siguientes efectos:",
       "<ul><li>Creas hasta 10 galones de agua limpia en un recipiente abierto o como lluvia en un cubo de 30 pies, apagando llamas expuestas.</li><li>Calientas o enfrías un recipiente de agua de hasta 1 galón.</li><li>Limpias o empapas un objeto o criatura de tamaño Mediano o menor.</li></ul>"
     ),
     acts: [n => utilityActivity(n)]
   }),
 
-  // ────────────────────────── NIVEL 1 (Principiante) ──────────────────────────
+  // ────────────────────────── NIVEL 1 (Básico) ──────────────────────────
   spell("Curación", {
     level: 1, school: "evo", img: "icons/svg/regen.svg", range: touch, target: one(),
     description: html(
-      rango("Principiante", "Curación"),
+      rango("Básico", "Curación"),
       chant("Luz suave que habita en el maná, cierra esta herida y devuelve el aliento: ¡Curación!"),
-      "Una criatura que toques recupera <strong>2d8 + tu modificador por característica para lanzar conjuros</strong> puntos de golpe. Cierra cortes y heridas leves, pero no hace crecer extremidades perdidas.",
-      "<p><strong>A niveles superiores.</strong> La curación aumenta en 2d8 por cada nivel de espacio por encima del 1.º.</p>"
+      "Una criatura que toques recupera <strong>1d8 + tu modificador por característica para lanzar conjuros</strong> puntos de golpe. Cierra cortes y heridas leves, pero no hace crecer extremidades perdidas.",
+      "<p><strong>A niveles superiores.</strong> La curación aumenta en 1d8 por cada nivel de espacio por encima del 1.º.</p>"
     ),
-    acts: [n => healActivity(n, dmg(2, 8, "healing", { bonus: "@mod", scaling: 2 }))]
+    acts: [n => healActivity(n, dmg(1, 8, "healing", { bonus: "@mod", scaling: 1 }))]
   }),
   spell("Desintoxicación", {
     level: 1, school: "abj", img: "icons/svg/poison.svg", range: touch, target: one(), duration: minutes(1, "hour"),
     description: html(
-      rango("Principiante", "Desintoxicación"),
+      rango("Básico", "Desintoxicación"),
       "Tocas a una criatura y neutralizas un veneno que la esté afectando; si tenía la condición <em>Envenenado</em>, esta termina. Durante 1 hora tiene ventaja en las tiradas de salvación contra veneno y resistencia al daño de veneno.",
-      "<p>Los venenos de monstruos poderosos del Continente Demoníaco pueden requerir el rango <strong>Intermedio</strong> (espacio de nivel 3 o superior), a criterio del DM.</p>"
+      "<p>Los venenos de monstruos poderosos del Continente Demoníaco pueden requerir el nivel <strong>Intermedio</strong> (espacio de nivel 3 o superior), a criterio del DM.</p>"
     ),
     acts: [n => utilityActivity(n)]
   }),
   spell("Bola de Fuego Menor", {
     level: 1, school: "evo", img: "icons/svg/fire.svg", range: ft(90), target: one(),
     description: html(
-      rango("Principiante", "Fuego"),
+      rango("Básico", "Fuego"),
       chant("Espíritu del fuego, reúnete y arde en una esfera: ¡Bola de Fuego!"),
       "Lanzas una esfera de fuego concentrado. Haz un ataque de conjuro a distancia. Si impacta, el objetivo recibe <strong>3d6 de daño de fuego</strong>. Si fallas, la esfera estalla al tocar el suelo y cada criatura a 5 pies del objetivo recibe 1d6 de daño de fuego.",
       "<p><strong>A niveles superiores.</strong> El daño del impacto aumenta en 1d6 por cada nivel de espacio por encima del 1.º.</p>",
-      "<p><em>No confundir</em> con la <em>Bola de Fuego</em> de nivel 3 del manual: en Mushoku es un hechizo de principiante.</p>"
+      "<p><em>No confundir</em> con la <em>Bola de Fuego</em> de nivel 3 del manual: en este mundo es un hechizo de nivel Básico.</p>"
     ),
     acts: [n => attackActivity(n, { parts: [dmg(3, 6, "fire", { scaling: 1 })] })]
   }),
   spell("Muro de Tierra", {
     level: 1, school: "trs", img: "icons/svg/statue.svg", range: ft(60), target: area("wall", 20, { width: 1, height: 10 }), duration: minutes(10),
     description: html(
-      rango("Principiante", "Tierra"),
+      rango("Básico", "Tierra"),
       chant("Tierra, alza tu escudo ante mí: ¡Muro de Tierra!"),
       "Levantas un muro de tierra compactada de hasta 20 pies de largo, 10 de alto y 1 de grosor. El muro proporciona cobertura total, tiene CA 13 y 30 puntos de golpe por cada sección de 10 pies. Si aparece en el espacio de una criatura, esta es empujada a un lado (a su elección).",
       "<p><strong>A niveles superiores.</strong> Por cada nivel de espacio por encima del 1.º, el muro puede medir 10 pies más de largo.</p>"
@@ -133,7 +133,7 @@ export default [
     activation: act("reaction", 1, "cuando te impacte un ataque o te alcance un conjuro de daño elemental"),
     properties: ["somatic"],
     description: html(
-      rango("Principiante", "Barrera"),
+      rango("Básico", "Barrera"),
       "Una lámina de maná translúcida aparece entre tú y el golpe. Hasta el inicio de tu siguiente turno obtienes un <strong>+5 a la CA</strong> (incluido contra el ataque desencadenante) y resistencia a un tipo de daño entre ácido, frío, fuego o relámpago.",
       "<p>Al no tener componente verbal, los magos sin encantamiento suelen dominarlo primero.</p>"
     ),
@@ -205,7 +205,7 @@ export default [
   spell("Descarga Eléctrica", {
     level: 3, school: "evo", img: "icons/svg/lightning.svg", range: ft(60), target: one(),
     description: html(
-      rango("Intermedio (no oficial)", "Agua + Viento (combinado)"),
+      rango("Intermedio", "Agua + Viento (combinado, poco conocido)"),
       "Una magia rara, nacida de entender cómo se forma el rayo en las nubes. Un arco eléctrico salta hacia una criatura: debe hacer una <strong>salvación de Constitución</strong> y recibe <strong>6d6 de daño de relámpago</strong> si falla, o la mitad si tiene éxito. Si falla, no puede usar reacciones hasta el inicio de su siguiente turno.",
       "<p>Si el objetivo está mojado o en el agua, tiene desventaja en la salvación.</p>",
       "<p><strong>A niveles superiores.</strong> +1d6 por cada nivel de espacio por encima del 3.º.</p>"
@@ -234,13 +234,13 @@ export default [
     acts: [n => healActivity(n, dmg(8, 8, "healing", { bonus: "@mod", scaling: 2 }))]
   }),
 
-  // ────────────────────────── NIVEL 6+ (Santo y superiores) ──────────────────────────
+  // ────────────────────────── NIVEL 6+ (Superior y más allá) ──────────────────────────
   spell("Cumulonimbo", {
     level: 6, school: "evo", img: "icons/svg/lightning.svg", range: { value: "", units: "self", special: "1 milla" }, target: area("radius", 60), duration: minutes(10), concentration: true,
     activation: act("minute", 1),
     description: html(
-      rango("Santo", "Agua"),
-      "Un hechizo de rango Santo que transforma el cielo. Tras 1 minuto de encantamiento, una enorme nube de tormenta cubre una milla de radio a tu alrededor y empieza a llover con fuerza (área ligeramente oscurecida, desventaja en Percepción basada en el oído, las llamas expuestas se apagan).",
+      rango("Superior", "Agua"),
+      "Un hechizo de nivel Superior que transforma el cielo. Tras 1 minuto de encantamiento, una enorme nube de tormenta cubre una milla de radio a tu alrededor y empieza a llover con fuerza (área ligeramente oscurecida, desventaja en Percepción basada en el oído, las llamas expuestas se apagan).",
       "<p>Mientras dure, puedes usar tu acción para hacer caer un <strong>rayo</strong> en un punto que veas: cada criatura a 10 pies debe hacer una <strong>salvación de Destreza</strong>, recibiendo <strong>6d10 de daño de relámpago</strong> si falla, o la mitad si tiene éxito.</p>",
       "<p>Lanzado sobre un campo de batalla, cambia el clima de toda la región durante horas tras terminar.</p>"
     ),
@@ -249,7 +249,7 @@ export default [
   spell("Cero Absoluto", {
     level: 7, school: "evo", img: "icons/svg/frozen.svg", range: { value: "", units: "self", special: "" }, target: area("cone", 60),
     description: html(
-      rango("Rey", "Agua"),
+      rango("Real", "Agua"),
       "Una ola de frío que congela el aire mismo surge de ti en un cono de 60 pies. Cada criatura en el área debe hacer una <strong>salvación de Constitución</strong>: recibe <strong>10d8 de daño de frío</strong> y queda <em>Apresada</em> por el hielo hasta el final de su siguiente turno si falla, o la mitad del daño si tiene éxito. El agua del área se congela hasta 1 pie de profundidad.",
       "<p><strong>A niveles superiores.</strong> +1d8 por cada nivel de espacio por encima del 7.º.</p>"
     ),
