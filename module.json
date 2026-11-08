@@ -1,0 +1,26 @@
+{
+  "id": "mushoku-tensei-dnd",
+  "title": "Mushoku Tensei para D&D 5e",
+  "description": "Contenido homebrew inspirado en Mushoku Tensei para el sistema dnd5e: hechizos por rangos, estilos de espada, Toki, ojos demoníacos, razas, objetos, bestiario y una guía del mundo.",
+  "version": "0.1.0",
+  "authors": [{ "name": "AngelRoma425" }],
+  "compatibility": { "minimum": "12", "verified": "13" },
+  "relationships": {
+    "systems": [{ "id": "dnd5e", "type": "system", "compatibility": { "minimum": "4.0.0" } }]
+  },
+  "languages": [],
+  "packs": [
+    { "name": "mt-guia", "label": "MT · Guía del Mundo", "path": "packs/mt-guia", "type": "JournalEntry", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
+    { "name": "mt-hechizos", "label": "MT · Hechizos", "path": "packs/mt-hechizos", "type": "Item", "system": "dnd5e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
+    { "name": "mt-rasgos", "label": "MT · Rasgos y Dotes", "path": "packs/mt-rasgos", "type": "Item", "system": "dnd5e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
+    { "name": "mt-razas", "label": "MT · Razas", "path": "packs/mt-razas", "type": "Item", "system": "dnd5e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
+    { "name": "mt-objetos", "label": "MT · Objetos", "path": "packs/mt-objetos", "type": "Item", "system": "dnd5e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
+    { "name": "mt-bestiario", "label": "MT · Bestiario", "path": "packs/mt-bestiario", "type": "Actor", "system": "dnd5e", "ownership": { "PLAYER": "NONE", "ASSISTANT": "OWNER" } }
+  ],
+  "packFolders": [
+    { "name": "Mushoku Tensei", "sorting": "m", "color": "#1f4e79", "packs": ["mt-guia", "mt-hechizos", "mt-rasgos", "mt-razas", "mt-objetos", "mt-bestiario"] }
+  ],
+  "url": "https://github.com/AngelRoma425/DnD-Mushoku",
+  "manifest": "https://raw.githubusercontent.com/AngelRoma425/DnD-Mushoku/main/module.json",
+  "download": "https://github.com/AngelRoma425/DnD-Mushoku/archive/refs/heads/main.zip"
+}
