@@ -1,11 +1,12 @@
 {
   "name": "mushoku-tensei-dnd",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "type": "module",
   "description": "Contenido homebrew de Mushoku Tensei para Foundry VTT (sistema dnd5e)",
   "scripts": {
-    "build": "node tools/build.mjs"
+    "build": "node tools/build.mjs",
+    "package": "rm -f dist/mushoku-tensei-dnd.zip && mkdir -p dist && zip -qr dist/mushoku-tensei-dnd.zip module.json README.md packs -x 'packs/*/LOCK' 'packs/*/LOG*'"
   },
   "devDependencies": {
     "@foundryvtt/foundryvtt-cli": "3.0.5"

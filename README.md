@@ -27,11 +27,15 @@ Pensado para el sistema dnd5e con **reglas de 2014**, usando la terminología de
 
 ## Instalación
 
-El repositorio es privado, así que Foundry no puede instalarlo por URL de manifiesto. Instálalo a mano:
+En Foundry: **Add-on Modules → Install Module**, pega esta URL en *Manifest URL* y pulsa **Install**:
 
-1. Consigue la carpeta del módulo: descomprime `mushoku-tensei-dnd.zip`, o descarga el repositorio en ZIP desde GitHub y renombra la carpeta a `mushoku-tensei-dnd`.
-2. Cópiala en la carpeta de datos de Foundry: `Data/modules/mushoku-tensei-dnd/` (dentro debe estar `module.json` directamente).
-3. Reinicia Foundry, abre un mundo con el sistema **dnd5e** y activa el módulo en *Game Settings → Manage Modules*.
+```
+https://raw.githubusercontent.com/AngelRoma425/DnD-Mushoku/claude/dreamy-lamport-ws0yfn/module.json
+```
+
+Después abre un mundo con el sistema **dnd5e** y activa el módulo en *Game Settings → Manage Modules*. Cuando haya una versión nueva, Foundry la mostrará con el botón **Update**.
+
+**Instalación manual:** descomprime `dist/mushoku-tensei-dnd.zip` en `Data/modules/mushoku-tensei-dnd/` (dentro debe quedar `module.json`).
 
 ## Editar o añadir contenido
 
@@ -42,7 +46,7 @@ npm install
 npm run build
 ```
 
-Esto regenera las carpetas de `packs/`. **Cierra Foundry (o desactiva el módulo) antes de compilar**, porque Foundry bloquea las bases de datos de los compendios mientras están abiertas.
+Esto regenera las carpetas de `packs/`. Para publicar una versión nueva: sube `version` en `module.json` y ejecuta `npm run package` para regenerar el ZIP de `dist/`. **Cierra Foundry (o desactiva el módulo) antes de compilar**, porque Foundry bloquea las bases de datos de los compendios mientras están abiertas.
 
 ## Aviso
 
