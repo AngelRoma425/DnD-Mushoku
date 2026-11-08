@@ -27,17 +27,11 @@ Pensado para el sistema dnd5e con **reglas de 2014**, usando la terminología de
 
 ## Instalación
 
-**Opción A: manifiesto** (cuando esta rama esté fusionada en `main`)
-En Foundry → *Add-on Modules* → *Install Module* → pega en *Manifest URL*:
+El repositorio es privado, así que Foundry no puede instalarlo por URL de manifiesto. Instálalo a mano:
 
-```
-https://raw.githubusercontent.com/AngelRoma425/DnD-Mushoku/main/module.json
-```
-
-**Opción B: manual**
-1. Descarga el repositorio como ZIP.
-2. Descomprímelo en `Data/modules/` y renombra la carpeta a `mushoku-tensei-dnd`.
-3. Reinicia Foundry, abre tu mundo dnd5e y activa el módulo en *Manage Modules*.
+1. Consigue la carpeta del módulo: descomprime `mushoku-tensei-dnd.zip`, o descarga el repositorio en ZIP desde GitHub y renombra la carpeta a `mushoku-tensei-dnd`.
+2. Cópiala en la carpeta de datos de Foundry: `Data/modules/mushoku-tensei-dnd/` (dentro debe estar `module.json` directamente).
+3. Reinicia Foundry, abre un mundo con el sistema **dnd5e** y activa el módulo en *Game Settings → Manage Modules*.
 
 ## Editar o añadir contenido
 
