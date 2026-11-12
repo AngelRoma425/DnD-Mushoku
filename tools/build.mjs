@@ -14,6 +14,8 @@ import guia from "../src/guia.mjs";
 import campanaDiario from "../src/campana/diario.mjs";
 import campanaObjetos from "../src/campana/objetos.mjs";
 import anomalias from "../src/campana/anomalias.mjs";
+import mercaderes from "../src/campana/mercaderes.mjs";
+import tablas from "../src/campana/tablas.mjs";
 
 const PACKS = [
   { name: "mt-hechizos", collection: "items", docs: hechizos },
@@ -24,12 +26,14 @@ const PACKS = [
   { name: "mt-guia", collection: "journal", docs: guia },
   { name: "mt-campana", collection: "journal", docs: campanaDiario },
   { name: "mt-campana-objetos", collection: "items", docs: campanaObjetos },
-  { name: "mt-anomalias", collection: "actors", docs: anomalias }
+  { name: "mt-anomalias", collection: "actors", docs: anomalias },
+  { name: "mt-mercaderes", collection: "actors", docs: mercaderes },
+  { name: "mt-tablas", collection: "tables", docs: tablas }
 ];
 
-const EMBEDDED = { actors: ["items", "effects"], items: ["effects"], journal: ["pages"] };
+const EMBEDDED = { actors: ["items", "effects"], items: ["effects"], journal: ["pages"], tables: ["results"] };
 
-const FOLDER_TYPE = { items: "Item", actors: "Actor", journal: "JournalEntry" };
+const FOLDER_TYPE = { items: "Item", actors: "Actor", journal: "JournalEntry", tables: "RollTable" };
 
 /** Crea las carpetas (rutas "A/B") que usan los documentos de un compendio. */
 function folders(docs, collection, pack) {
@@ -51,13 +55,19 @@ function folders(docs, collection, pack) {
 function prepare(doc, collection, pack, key = null, parentKey = null, folderMap = null) {
   const out = structuredClone(doc);
   out._id = key ?? id(pack, doc.name);
-  out._key = parentKey ? `!${parentKey.collection}.${collection}!${parentKey.id}.${out._id}` : `!${collection}!${out._id}`;
+  // parentKey = { collections: ["actors", "items"], ids: [actorId, itemId] } para documentos anidados.
+  out._key = parentKey
+    ? `!${[...parentKey.collections, collection].join(".")}!${[...parentKey.ids, out._id].join(".")}`
+    : `!${collection}!${out._id}`;
   out.flags ??= {};
   out.ownership ??= { default: 0 };
   if (!parentKey) out.folder = doc.folder ? folderMap.get(doc.folder)._id : null;
   for (const sub of EMBEDDED[collection] ?? []) {
     out[sub] = (out[sub] ?? []).map((child, i) =>
-      prepare(child, sub, pack, id(pack, doc.name, sub, child.name, i), { collection, id: out._id }));
+      prepare(child, sub, pack, id(pack, out._id, sub, child.name, i), {
+        collections: [...(parentKey?.collections ?? []), collection],
+        ids: [...(parentKey?.ids ?? []), out._id]
+      }));
     if (sub !== "pages") out[sub].forEach(c => { delete c.ownership; });
   }
   return out;
@@ -70,7 +80,8 @@ fs.rmSync(path.join(root, "build"), { recursive: true, force: true });
 // Comprobar que cada @UUID y cada ItemGrant apunta a un documento existente.
 const known = new Set(PACKS.flatMap(({ name, collection, docs }) =>
   docs.map(d => `Compendium.${MODULE_ID}.${name}.${FOLDER_TYPE[collection]}.${id(name, d.name)}`)));
-const refs = JSON.stringify(PACKS.map(p => p.docs)).match(/Compendium\.[\w-]+\.[\w-]+\.\w+\.\w{16}/g) ?? [];
+const refs = (JSON.stringify(PACKS.map(p => p.docs)).match(/Compendium\.[\w-]+\.[\w-]+\.\w+\.\w{16}/g) ?? [])
+  .filter(r => r.startsWith(`Compendium.${MODULE_ID}.`));
 const broken = [...new Set(refs)].filter(r => !known.has(r));
 if (broken.length) throw new Error(`Enlaces rotos:\n${broken.join("\n")}`);
 

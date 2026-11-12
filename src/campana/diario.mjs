@@ -10,6 +10,33 @@ const secret = text => `<section class="secret"><p>${text}</p></section>`;
 
 const P = {};
 
+P["Preparar Foundry"] = `
+<h1>Preparar la mesa en Foundry</h1>
+<p><em>Lista de comprobación del DM. Hazla una vez por mundo.</em></p>
+<h2>1. Mundo y sistema</h2>
+<ul>
+  <li>Foundry v14 con el sistema <strong>dnd5e</strong> actualizado.</li>
+  <li><strong>Configure Settings → dnd5e → Rules Version → Legacy (2014)</strong>.</li>
+  <li>Activa <strong>Mushoku Tensei para D&amp;D 5e</strong> y, si lo tienes, <strong>Anomalía · Personajes (privado)</strong>.</li>
+</ul>
+<h2>2. Importar al mundo</h2>
+<ul>
+  <li><strong>Personajes:</strong> arrastra cada PJ desde «Anomalía · Personajes» a Actores. Clic derecho → <em>Configure Ownership</em> → su jugador como <strong>Owner</strong>.</li>
+  <li><strong>Mercaderes:</strong> arrastra los de «MT · Mercaderes» a Actores y, cuando el grupo llegue a la ciudad, coloca su token en el mapa. Con Item Piles, los jugadores hacen doble clic en el token para abrir la tienda.</li>
+  <li><strong>Enemigos:</strong> arrastra las criaturas de «MT · Anomalías» o «MT · Bestiario» directamente al mapa.</li>
+  <li><strong>Tablas:</strong> abre «MT · Tablas de Campaña» y pulsa <em>Roll</em>; los objetos sorteados salen en el chat y se pueden arrastrar a la hoja del jugador.</li>
+</ul>
+<h2>3. Módulos recomendados</h2>
+<ul>
+  <li><strong>Item Piles</strong> (tiendas y botín): en su configuración, pestaña <em>System Specific Settings</em>, pulsa <strong>Reset Settings</strong>; si los campos siguen vacíos, rellénalos con <code>loot</code>/<code>weapon</code>/<code>equipment</code>, <code>system.quantity</code>, <code>system.price.value</code> y las cinco monedas <code>system.currency.pp/gp/ep/sp/cp</code> (oro como principal).</li>
+  <li><strong>Dice So Nice!</strong>, <strong>Tidy 5e Sheets</strong>, <strong>Token Action HUD (Core + D&amp;D 5e)</strong>, <strong>Monk's TokenBar</strong>, <strong>Health Estimate</strong> y una traducción al español con <strong>Babele</strong>.</li>
+</ul>
+<h2>4. Jugadores</h2>
+<ul>
+  <li><strong>Game Settings → User Management:</strong> crea un usuario por jugador, con contraseña, y asígnale su personaje.</li>
+  <li>Los jugadores ven el compendio <strong>MT · Guía del Mundo</strong> (incluye el resumen de la campaña sin spoilers), los hechizos, dotes, razas y objetos generales. Los compendios de la campaña y los personajes privados son solo para ti.</li>
+</ul>`;
+
 P["Premisa y Prólogo"] = `
 <h1>Historias del Mundo de las Seis Caras: Anomalía</h1>
 <h2>Premisa</h2>
@@ -225,6 +252,7 @@ ${table(["#", "Título", "Resumen"], [
   ["12", "Un Trago Amargo", "Escape del laberinto, Holden y la aldea Migurd."],
   ["13", "Un Cuento Infantil", "Saru, Misaki y los libros del Dios Dragón."],
   ["14", "Escamas de Ermitaño", "En busca de Vaelthrys."],
+  ["—", "<strong>Arco 2</strong>", "El grupo vuelve al Continente Central."],
   ["15", "Los Viejos Tiempos", "Por preparar."],
   ["16", "Trazando Nuevos Caminos", "Por preparar."],
   ["17", "5 Toneladas de Chatarra", "Por preparar."],

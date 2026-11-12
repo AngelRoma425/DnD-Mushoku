@@ -4,7 +4,7 @@ Módulo de Foundry VTT con contenido **homebrew de fans** inspirado en *Mushoku 
 
 ## Contenido
 
-Pensado para el sistema dnd5e con **reglas de 2014**, usando la terminología de la campaña (*Filo / Cauce / Nórdico Celestial*, niveles *Básico → Deidad*, idiomas y monedas del mundo).
+Pensado para **Foundry v14** y el sistema dnd5e con **reglas de 2014**, usando la terminología de la campaña (*Filo / Cauce / Nórdico Celestial*, niveles *Básico → Deidad*, idiomas y monedas del mundo).
 
 ### Contenido general (visible para los jugadores)
 
@@ -24,6 +24,8 @@ Pensado para el sistema dnd5e con **reglas de 2014**, usando la terminología de
 | **MT · Campaña: Anomalía** | Premisa, origen de las anomalías, tramas de los PJ, visiones, PNJ, Metro, Rikarisu, La Muda del Desierto, Aldea Migurd, diario de sesiones, secretos de objetos y música. |
 | **MT · Objetos de Campaña** (132) | Todo el botín y los mercaderes del documento de lore, organizados en carpetas (Metro por jugador, mercaderes de Rikarisu, Sáqher, investigación d20, botín del Jardinero, materiales, Roka y Dreno). Incluye bonificadores, resistencias y curaciones automáticas. |
 | **MT · Anomalías** (6) | Lobo Siamés, Monstruo Mudado, Lagarto Florido, Guerrero Mantis, Greenkeeper y El Jardinero (con las 10 habilidades copiadas). Las estadísticas son una propuesta: ajústalas a tu mesa. |
+| **MT · Mercaderes** (8) | Tiendas de **Item Piles** listas: Yor'Zuh, Myrrha, Kiri-Kiri, Seh'ra, Rakk y Sáqher (Rikarisu), Roka y Dreno (Aldea Migurd), con todo su inventario y precios. Kiri-Kiri y Roka venden además las armas y armaduras básicas del SRD. |
+| **MT · Tablas de Campaña** (8) | Tablas aleatorias: botín del Metro por jugador, investigación y botín de la taberna oculta, y caravanas destruidas. |
 
 ## Instalación
 
@@ -47,6 +49,10 @@ npm run build
 ```
 
 Esto regenera las carpetas de `packs/`. Para publicar una versión nueva: sube `version` en `module.json` y ejecuta `npm run package` para regenerar el ZIP de `dist/`. **Cierra Foundry (o desactiva el módulo) antes de compilar**, porque Foundry bloquea las bases de datos de los compendios mientras están abiertas.
+
+## Licencias
+
+Las armas, armaduras y munición básicas de las tiendas proceden del **System Reference Document 5.1** de Wizards of the Coast LLC, disponible en https://dnd.wizards.com/resources/systems-reference-document y publicado bajo la licencia Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/legalcode). Sus nombres se tradujeron al español.
 
 ## Aviso
 

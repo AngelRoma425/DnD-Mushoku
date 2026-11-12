@@ -1,0 +1,7821 @@
+{
+ "Sling": {
+  "es": "Honda",
+  "srdId": "3gynWO9sN4OLGMWD",
+  "doc": {
+   "_id": "3gynWO9sN4OLGMWD",
+   "name": "Sling",
+   "type": "weapon",
+   "img": "icons/weapons/slings/slingshot-wood.webp",
+   "system": {
+    "description": {
+     "value": "<p>A flexible lash of leather affixed to a wooden handle which is capable of flinging rocks or metal bullets with deadly velocity.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 0,
+     "units": "lb"
+    },
+    "price": {
+     "value": 1,
+     "denomination": "sp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": 30,
+     "long": 120,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 4,
+      "bonus": "",
+      "types": [
+       "bludgeoning"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "amm"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "simpleR",
+     "baseItem": "sling"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "30",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "ranged",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {
+     "type": "slingBullet"
+    },
+    "mastery": "",
+    "identifier": "sling"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Mace": {
+  "es": "Maza",
+  "srdId": "Ajyq6nGwF7FtLhDQ",
+  "doc": {
+   "_id": "Ajyq6nGwF7FtLhDQ",
+   "name": "Mace",
+   "type": "weapon",
+   "img": "icons/weapons/maces/mace-flanged-steel.webp",
+   "system": {
+    "description": {
+     "value": "<p>A heavy metal head mounted to the end of a sturdy haft meant to deliver powerful, crushing blows capable of shattering armor and bone alike.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 4,
+     "units": "lb"
+    },
+    "price": {
+     "value": 5,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 6,
+      "bonus": "",
+      "types": [
+       "bludgeoning"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [],
+    "proficient": null,
+    "type": {
+     "value": "simpleM",
+     "baseItem": "mace"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "mace"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Flail": {
+  "es": "Mangual",
+  "srdId": "UrH3sMdnUDckIHJ6",
+  "doc": {
+   "_id": "UrH3sMdnUDckIHJ6",
+   "name": "Flail",
+   "type": "weapon",
+   "img": "icons/weapons/maces/flail-ball-grey.webp",
+   "system": {
+    "description": {
+     "value": "<p>A heavy iron ball attached to a stout wooden shaft with a heavy chain, allowing it to deal devastating damage at the end of wide, sweeping swings.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 2,
+     "units": "lb"
+    },
+    "price": {
+     "value": 10,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 8,
+      "bonus": "",
+      "types": [
+       "bludgeoning"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [],
+    "proficient": null,
+    "type": {
+     "value": "martialM",
+     "baseItem": "flail"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "flail"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Javelin": {
+  "es": "Jabalina",
+  "srdId": "DWLMnODrnHn8IbAG",
+  "doc": {
+   "_id": "DWLMnODrnHn8IbAG",
+   "name": "Javelin",
+   "type": "weapon",
+   "img": "icons/weapons/polearms/javelin-flared.webp",
+   "system": {
+    "description": {
+     "value": "<p>This light and flexible spear is designed for throwing, but is versatile enough to be used in melee combat as well.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 2,
+     "units": "lb"
+    },
+    "price": {
+     "value": 5,
+     "denomination": "sp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": 30,
+     "long": 120,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 6,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "thr"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "simpleM",
+     "baseItem": "javelin"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "30",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "mastery": "",
+    "identifier": "javelin"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Whip": {
+  "es": "Látigo",
+  "srdId": "QKTyxoO0YDnAsbYe",
+  "doc": {
+   "_id": "QKTyxoO0YDnAsbYe",
+   "name": "Whip",
+   "type": "weapon",
+   "img": "icons/sundries/survival/leather-strap-brown.webp",
+   "system": {
+    "description": {
+     "value": "<p>A tensile lash made of leather, cord, or chain which can lash out at nearby enemies, dealing lacerations and harrying them from a distance.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 3,
+     "units": "lb"
+    },
+    "price": {
+     "value": 2,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 4,
+      "bonus": "",
+      "types": [
+       "slashing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "fin",
+     "rch"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialM",
+     "baseItem": "whip"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "10",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "whip"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Greataxe": {
+  "es": "Gran hacha",
+  "srdId": "1Lxk6kmoRhG8qQ0u",
+  "doc": {
+   "_id": "1Lxk6kmoRhG8qQ0u",
+   "name": "Greataxe",
+   "type": "weapon",
+   "img": "icons/weapons/axes/axe-double-black.webp",
+   "system": {
+    "description": {
+     "value": "<p>This enormous axe features two twin crescent blades mounted on either side of a tall spiked shaft. Designed to be wielded with two hands and cleave foes in twain.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 7,
+     "units": "lb"
+    },
+    "price": {
+     "value": 30,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 12,
+      "bonus": "",
+      "types": [
+       "slashing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "hvy",
+     "two"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialM",
+     "baseItem": "greataxe"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "greataxe"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Quarterstaff": {
+  "es": "Bastón",
+  "srdId": "g2dWN7PQiMRYWzyk",
+  "doc": {
+   "_id": "g2dWN7PQiMRYWzyk",
+   "name": "Quarterstaff",
+   "type": "weapon",
+   "img": "icons/weapons/staves/staff-simple.webp",
+   "system": {
+    "description": {
+     "value": "<p>A thick shaft of wood wrapped with a sturdy grip makes a highly functional weapon in addition to a stout walking stick.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 4,
+     "units": "lb"
+    },
+    "price": {
+     "value": 2,
+     "denomination": "sp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": 1,
+      "denomination": 8,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 6,
+      "bonus": "",
+      "types": [
+       "bludgeoning"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "ver"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "simpleM",
+     "baseItem": "quarterstaff"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "quarterstaff"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Club": {
+  "es": "Garrote",
+  "srdId": "nfIRTECQIG81CvM4",
+  "doc": {
+   "_id": "nfIRTECQIG81CvM4",
+   "name": "Club",
+   "type": "weapon",
+   "img": "icons/weapons/clubs/club-banded-brown.webp",
+   "system": {
+    "description": {
+     "value": "<p>A stout knob of wood forms a simple, but effective, cudgel. These weapons are used to bludgeon foes, bruising flesh and breaking bones.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 2,
+     "units": "lb"
+    },
+    "price": {
+     "value": 1,
+     "denomination": "sp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 4,
+      "bonus": "",
+      "types": [
+       "bludgeoning"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "lgt"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "simpleM",
+     "baseItem": "club"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "mastery": "",
+    "identifier": "club"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Greatclub": {
+  "es": "Gran garrote",
+  "srdId": "QRCsxkCwWNwswL9o",
+  "doc": {
+   "_id": "QRCsxkCwWNwswL9o",
+   "name": "Greatclub",
+   "type": "weapon",
+   "img": "icons/weapons/clubs/club-heavy-barbed-grey.webp",
+   "system": {
+    "description": {
+     "value": "<p>A larger variant of the simple club, a hefty wooden shaft with an enormous knot of wood upon the end deals crippling bludgeoning damage to unfortunate foes.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 10,
+     "units": "lb"
+    },
+    "price": {
+     "value": 2,
+     "denomination": "sp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 8,
+      "bonus": "",
+      "types": [
+       "bludgeoning"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "two"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "simpleM",
+     "baseItem": "greatclub"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "greatclub"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Light Hammer": {
+  "es": "Martillo ligero",
+  "srdId": "XVK6TOL4sGItssAE",
+  "doc": {
+   "_id": "XVK6TOL4sGItssAE",
+   "name": "Light Hammer",
+   "type": "weapon",
+   "img": "icons/weapons/hammers/shorthammer-double-stone-engraved.webp",
+   "system": {
+    "description": {
+     "value": "<p>This sturdy hammer is small enough to be nimbly wielded or used in combination with another weapon.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 2,
+     "units": "lb"
+    },
+    "price": {
+     "value": 2,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": 20,
+     "long": 60,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 4,
+      "bonus": "",
+      "types": [
+       "bludgeoning"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "lgt",
+     "thr"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "simpleM",
+     "baseItem": "lighthammer"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "20",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "light-hammer"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Shortsword": {
+  "es": "Espada corta",
+  "srdId": "osLzOwQdPtrK3rQH",
+  "doc": {
+   "_id": "osLzOwQdPtrK3rQH",
+   "name": "Shortsword",
+   "type": "weapon",
+   "img": "icons/weapons/swords/sword-guard-worn-purple.webp",
+   "system": {
+    "description": {
+     "value": "<p>A medium sized blade with a firm crossguard and a leather-wrapped handle. A versatile weapon which makes up in versatility what it lacks in reach.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 2,
+     "units": "lb"
+    },
+    "price": {
+     "value": 10,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 6,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "fin",
+     "lgt"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialM",
+     "baseItem": "shortsword"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "shortsword"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Shortbow": {
+  "es": "Arco corto",
+  "srdId": "GJv6WkD7D2J6rP6M",
+  "doc": {
+   "_id": "GJv6WkD7D2J6rP6M",
+   "name": "Shortbow",
+   "type": "weapon",
+   "img": "icons/weapons/bows/shortbow-leather.webp",
+   "system": {
+    "description": {
+     "value": "<p>This two handed bow is somewhat smaller than the traditional longbow variant, making it well suited for rapid attacks while on the move or mounted from horseback.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 2,
+     "units": "lb"
+    },
+    "price": {
+     "value": 25,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": 80,
+     "long": 320,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 6,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "amm",
+     "two"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "simpleR",
+     "baseItem": "shortbow"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "80",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "ranged",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {
+     "type": "arrow"
+    },
+    "mastery": "",
+    "identifier": "shortbow"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Blowgun": {
+  "es": "Cerbatana",
+  "srdId": "wNWK6yJMHG9ANqQV",
+  "doc": {
+   "_id": "wNWK6yJMHG9ANqQV",
+   "name": "Blowgun",
+   "type": "weapon",
+   "img": "icons/commodities/wood/log-rough-hickory-brown.webp",
+   "system": {
+    "description": {
+     "value": "<p>A primitive, but deadly, weapon favored by tribes and guerrila fighters. The darts fired from this gun can puncture and deliver lethal doses of venom.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 1,
+     "units": "lb"
+    },
+    "price": {
+     "value": 10,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": 25,
+     "long": 100,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": null,
+      "denomination": 0,
+      "bonus": "1",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "amm",
+     "lod"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialR",
+     "baseItem": "blowgun"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "25",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "ranged",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {
+     "type": "blowgunNeedle"
+    },
+    "mastery": "",
+    "identifier": "blowgun"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Net": {
+  "es": "Red",
+  "srdId": "aEiM49V8vWpWw7rU",
+  "doc": {
+   "_id": "aEiM49V8vWpWw7rU",
+   "name": "Net",
+   "type": "weapon",
+   "img": "icons/tools/fishing/net-simple-brown.webp",
+   "system": {
+    "description": {
+     "value": "<p>These thickly woven fibers are reinforced for use in combat to entrap and entangle even the most dangerous foes, rendering them vulnerable for assault with other weaponry.</p>\n<p><strong>Special.</strong> A Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 3,
+     "units": "lb"
+    },
+    "price": {
+     "value": 1,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": 5,
+     "long": 15,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": null,
+      "denomination": null,
+      "types": [],
+      "custom": {
+       "enabled": false
+      },
+      "scaling": {
+       "number": 1
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "spc",
+     "thr"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialR",
+     "baseItem": "net"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "ranged",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     },
+     "dnd5eactivity100": {
+      "_id": "dnd5eactivity100",
+      "type": "save",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "damage": {
+       "onSave": "half",
+       "parts": []
+      },
+      "save": {
+       "ability": "str",
+       "dc": {
+        "calculation": "",
+        "formula": ""
+       }
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "net"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Longsword": {
+  "es": "Espada larga",
+  "srdId": "10ZP2Bu3vnCuYMIB",
+  "doc": {
+   "_id": "10ZP2Bu3vnCuYMIB",
+   "name": "Longsword",
+   "type": "weapon",
+   "img": "icons/weapons/swords/greatsword-guard.webp",
+   "system": {
+    "description": {
+     "value": "<p>A lengthy straight blade designed for slashing foes, the longsword is a highly versatile weapon that may also be wielded with two hands for more punishing strikes.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 3,
+     "units": "lb"
+    },
+    "price": {
+     "value": 15,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": 0,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 8,
+      "bonus": "",
+      "types": [
+       "slashing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "ver"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialM",
+     "baseItem": "longsword"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "mastery": "",
+    "identifier": "longsword"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Dart": {
+  "es": "Dardo",
+  "srdId": "3rCO8MTIdPGSW6IJ",
+  "doc": {
+   "_id": "3rCO8MTIdPGSW6IJ",
+   "name": "Dart",
+   "type": "weapon",
+   "img": "icons/weapons/thrown/dart-feathered.webp",
+   "system": {
+    "description": {
+     "value": "<p>A small thrown implement crafted with a short wooden shaft and crossed feathres with a sharp wooden or metal tip. Darts can be thrown with sufficient force to puncture the skin.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 0.25,
+     "units": "lb"
+    },
+    "price": {
+     "value": 5,
+     "denomination": "cp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": 20,
+     "long": 60,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 4,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "fin",
+     "thr"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "simpleR",
+     "baseItem": "dart"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "20",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "ranged",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "mastery": "",
+    "identifier": "dart"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Spear": {
+  "es": "Lanza",
+  "srdId": "OG4nBBydvmfWYXIk",
+  "doc": {
+   "_id": "OG4nBBydvmfWYXIk",
+   "name": "Spear",
+   "type": "weapon",
+   "img": "icons/weapons/polearms/spear-flared-green.webp",
+   "system": {
+    "description": {
+     "value": "<p>A gleaming steel point mouted atop a stout wooden haft, the spear may be wielded in one hand or two and can puncture through the heaviest armor with deadly force.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 3,
+     "units": "lb"
+    },
+    "price": {
+     "value": 1,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": 20,
+     "long": 60,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": 1,
+      "denomination": 8,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 6,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "thr",
+     "ver"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "simpleM",
+     "baseItem": "spear"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "20",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "spear"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Greatsword": {
+  "es": "Espadón",
+  "srdId": "xMkP8BmFzElcsMaR",
+  "doc": {
+   "_id": "xMkP8BmFzElcsMaR",
+   "name": "Greatsword",
+   "type": "weapon",
+   "img": "icons/weapons/swords/greatsword-crossguard-steel.webp",
+   "system": {
+    "description": {
+     "value": "<p>A mighty two-handed blade is over four feet long an almost five inches wide. This weapon requires extensive martial training but those proficient in its use are formidable warriors.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 6,
+     "units": "lb"
+    },
+    "price": {
+     "value": 50,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 2,
+      "denomination": 6,
+      "bonus": "",
+      "types": [
+       "slashing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "hvy",
+     "two"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialM",
+     "baseItem": "greatsword"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "greatsword"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Heavy Crossbow": {
+  "es": "Ballesta pesada",
+  "srdId": "RmP0mYRn2J7K26rX",
+  "doc": {
+   "_id": "RmP0mYRn2J7K26rX",
+   "name": "Heavy Crossbow",
+   "type": "weapon",
+   "img": "icons/weapons/crossbows/crossbow-loaded-black.webp",
+   "system": {
+    "description": {
+     "value": "<p>A large crossbow mounted on a sturdy block of wood which is loaded using a hand crank and fires thick steel bolts with deadly acceleration that punches through armor and flesh.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 18,
+     "units": "lb"
+    },
+    "price": {
+     "value": 50,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": 100,
+     "long": 400,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 10,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "amm",
+     "hvy",
+     "lod",
+     "two"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialR",
+     "baseItem": "heavycrossbow"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "100",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "ranged",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {
+     "type": "crossbowBolt"
+    },
+    "mastery": "",
+    "identifier": "heavy-crossbow"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Scimitar": {
+  "es": "Cimitarra",
+  "srdId": "fbC0Mg1a73wdFbqO",
+  "doc": {
+   "_id": "fbC0Mg1a73wdFbqO",
+   "name": "Scimitar",
+   "type": "weapon",
+   "img": "icons/weapons/swords/scimitar-worn-blue.webp",
+   "system": {
+    "description": {
+     "value": "<p>This curved blade is narrow near the wrapped handle but broadens towards a gleaming tip.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 3,
+     "units": "lb"
+    },
+    "price": {
+     "value": 25,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 6,
+      "bonus": "",
+      "types": [
+       "slashing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "fin",
+     "lgt"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialM",
+     "baseItem": "scimitar"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "scimitar"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Longbow": {
+  "es": "Arco largo",
+  "srdId": "3cymOVja8jXbzrdT",
+  "doc": {
+   "_id": "3cymOVja8jXbzrdT",
+   "name": "Longbow",
+   "type": "weapon",
+   "img": "icons/weapons/bows/longbow-recurve-leather-brown.webp",
+   "system": {
+    "description": {
+     "value": "<p>A thick shaft of laminated wood is bowed by a taut string capable of launching deadly arrows at long distances.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 2,
+     "units": "lb"
+    },
+    "price": {
+     "value": 50,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": 150,
+     "long": 600,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 8,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "amm",
+     "hvy",
+     "two"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialR",
+     "baseItem": "longbow"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "150",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "ranged",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {
+     "type": "arrow"
+    },
+    "mastery": "",
+    "identifier": "longbow"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Maul": {
+  "es": "Mazo",
+  "srdId": "DizirD7eqjh8n95A",
+  "doc": {
+   "_id": "DizirD7eqjh8n95A",
+   "name": "Maul",
+   "type": "weapon",
+   "img": "icons/weapons/hammers/hammer-double-stone-worn.webp",
+   "system": {
+    "description": {
+     "value": "<p>This heavy two-handed mace crushes metal and bone with thunderous force.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 10,
+     "units": "lb"
+    },
+    "price": {
+     "value": 10,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 2,
+      "denomination": 6,
+      "bonus": "",
+      "types": [
+       "bludgeoning"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "hvy",
+     "two"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialM",
+     "baseItem": "maul"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "maul"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Morningstar": {
+  "es": "Lucero del alba",
+  "srdId": "dX8AxCh9o0A9CkT3",
+  "doc": {
+   "_id": "dX8AxCh9o0A9CkT3",
+   "name": "Morningstar",
+   "type": "weapon",
+   "img": "icons/weapons/maces/mace-cube-spiked-steel.webp",
+   "system": {
+    "description": {
+     "value": "<p>A viciously spiked metal head mounted upon the end of a stout haft makes for a deadly weapon which can puncture armor and flesh alike.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 4,
+     "units": "lb"
+    },
+    "price": {
+     "value": 15,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 8,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [],
+    "proficient": null,
+    "type": {
+     "value": "martialM",
+     "baseItem": "morningstar"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "morningstar"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "War Pick": {
+  "es": "Pico de guerra",
+  "srdId": "2YdfjN1PIIrSHZii",
+  "doc": {
+   "_id": "2YdfjN1PIIrSHZii",
+   "name": "War Pick",
+   "type": "weapon",
+   "img": "icons/weapons/axes/pickaxe-iron-green.webp",
+   "system": {
+    "description": {
+     "value": "<p>A brutal curved spike mounted on a sturdy haft - designed for puncturing armor with deadly force.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 2,
+     "units": "lb"
+    },
+    "price": {
+     "value": 5,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 8,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [],
+    "proficient": null,
+    "type": {
+     "value": "martialM",
+     "baseItem": "warpick"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "war-pick"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Dagger": {
+  "es": "Daga",
+  "srdId": "0E565kQUBmndJ1a2",
+  "doc": {
+   "_id": "0E565kQUBmndJ1a2",
+   "name": "Dagger",
+   "type": "weapon",
+   "img": "icons/weapons/daggers/dagger-straight-blue.webp",
+   "system": {
+    "description": {
+     "value": "<p>A short metal blade mounted to a small hilt and crossguard. The dagger makes an effective side armament for hardened warriors or a hidden blade for assassins and thieves.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 1,
+     "units": "lb"
+    },
+    "price": {
+     "value": 2,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": 20,
+     "long": 60,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 4,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "fin",
+     "lgt",
+     "thr"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "simpleM",
+     "baseItem": "dagger"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "20",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "dagger"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Battleaxe": {
+  "es": "Hacha de batalla",
+  "srdId": "I0WocDSuNpGJayPb",
+  "doc": {
+   "_id": "I0WocDSuNpGJayPb",
+   "name": "Battleaxe",
+   "type": "weapon",
+   "img": "icons/weapons/axes/axe-battle-black.webp",
+   "system": {
+    "description": {
+     "value": "<p>A stout crescent blade mounted on a thick shaft wrapped in a sturdy grip. This axe is large enough to be wielded with two hands and is adorned with a spike upon the back-side of the blade.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 4,
+     "units": "lb"
+    },
+    "price": {
+     "value": 10,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": 0,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 8,
+      "bonus": "",
+      "types": [
+       "slashing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "ver"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialM",
+     "baseItem": "battleaxe"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "mastery": "",
+    "identifier": "battleaxe"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Trident": {
+  "es": "Tridente",
+  "srdId": "F65ANO66ckP8FDMa",
+  "doc": {
+   "_id": "F65ANO66ckP8FDMa",
+   "name": "Trident",
+   "type": "weapon",
+   "img": "icons/weapons/polearms/trident-silver-blue.webp",
+   "system": {
+    "description": {
+     "value": "<p>A multi-pronged spear designed to impale a target in multiple locations, pinning them in place. Often used in combination with a net to entrap and harass foes.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 4,
+     "units": "lb"
+    },
+    "price": {
+     "value": 5,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": 20,
+     "long": 60,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": 1,
+      "denomination": 8,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 6,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "thr",
+     "ver"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialM",
+     "baseItem": "trident"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "20",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "trident"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Warhammer": {
+  "es": "Martillo de guerra",
+  "srdId": "F0Df164Xv1gWcYt0",
+  "doc": {
+   "_id": "F0Df164Xv1gWcYt0",
+   "name": "Warhammer",
+   "type": "weapon",
+   "img": "icons/weapons/hammers/hammer-drilling-spiked.webp",
+   "system": {
+    "description": {
+     "value": "<p>A heavy metal hammer capable of being wielded with a single hand with a shield or in two hands to deliver crushing concussive blows.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 2,
+     "units": "lb"
+    },
+    "price": {
+     "value": 15,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": 1,
+      "denomination": 10,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 8,
+      "bonus": "",
+      "types": [
+       "bludgeoning"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "ver"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialM",
+     "baseItem": "warhammer"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "warhammer"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Hand Crossbow": {
+  "es": "Ballesta de mano",
+  "srdId": "qaSro7kFhxD6INbZ",
+  "doc": {
+   "_id": "qaSro7kFhxD6INbZ",
+   "name": "Hand Crossbow",
+   "type": "weapon",
+   "img": "icons/weapons/crossbows/crossbow-slotted.webp",
+   "system": {
+    "description": {
+     "value": "<p>A lightweight crossbow designed to be held in one hand or strapped to one's wrist to fire light bolts.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 3,
+     "units": "lb"
+    },
+    "price": {
+     "value": 75,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": 30,
+     "long": 120,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 6,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "amm",
+     "lgt",
+     "lod"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialR",
+     "baseItem": "handcrossbow"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "30",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "ranged",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {
+     "type": "crossbowBolt"
+    },
+    "mastery": "",
+    "identifier": "hand-crossbow"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Pike": {
+  "es": "Pica",
+  "srdId": "tC0kcqZT9HHAO0PD",
+  "doc": {
+   "_id": "tC0kcqZT9HHAO0PD",
+   "name": "Pike",
+   "type": "weapon",
+   "img": "icons/weapons/polearms/spear-hooked-spike.webp",
+   "system": {
+    "description": {
+     "value": "<p>A sturdy blade mounted upon the end of a long metal haft. Designed as a defensive weapon with considerable reach to both fend off and menace foes.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 18,
+     "units": "lb"
+    },
+    "price": {
+     "value": 5,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 10,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "hvy",
+     "rch",
+     "two"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialM",
+     "baseItem": "pike"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "10",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "pike"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Glaive": {
+  "es": "Guja",
+  "srdId": "rOG1OM2ihgPjOvFW",
+  "doc": {
+   "_id": "rOG1OM2ihgPjOvFW",
+   "name": "Glaive",
+   "type": "weapon",
+   "img": "icons/weapons/polearms/glaive-simple.webp",
+   "system": {
+    "description": {
+     "value": "<p>A large blade mounted on the end of a tall shaft. This polearm provides the ability to attack with deadly efficiency from greater range than typical melee weapons.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 6,
+     "units": "lb"
+    },
+    "price": {
+     "value": 20,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 10,
+      "bonus": "",
+      "types": [
+       "slashing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "hvy",
+     "rch",
+     "two"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialM",
+     "baseItem": "glaive"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "10",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "mastery": "",
+    "identifier": "glaive"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Sickle": {
+  "es": "Hoz",
+  "srdId": "i4NeNZ30ycwPDHMx",
+  "doc": {
+   "_id": "i4NeNZ30ycwPDHMx",
+   "name": "Sickle",
+   "type": "weapon",
+   "img": "icons/weapons/sickles/sickle-curved.webp",
+   "system": {
+    "description": {
+     "value": "<p>A crescent hooked blade mounted atop a short haft, light enough to be wielded in one hand for treshing crops or foes.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 2,
+     "units": "lb"
+    },
+    "price": {
+     "value": 1,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 4,
+      "bonus": "",
+      "types": [
+       "slashing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "lgt"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "simpleM",
+     "baseItem": "sickle"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "sickle"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Halberd": {
+  "es": "Alabarda",
+  "srdId": "DMejWAc8r8YvDPP1",
+  "doc": {
+   "_id": "DMejWAc8r8YvDPP1",
+   "name": "Halberd",
+   "type": "weapon",
+   "img": "icons/weapons/polearms/halberd-engraved-black.webp",
+   "system": {
+    "description": {
+     "value": "<p>A spear-tipped metal shaft accompanied by a crescent blade, the halberd is a strong defensive weapon which allows a warrior to fend off foes using the reach of the shaft to attack from safe distance.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 6,
+     "units": "lb"
+    },
+    "price": {
+     "value": 20,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 10,
+      "bonus": "",
+      "types": [
+       "slashing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "hvy",
+     "rch",
+     "two"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialM",
+     "baseItem": "halberd"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "10",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "mastery": "",
+    "identifier": "halberd"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Handaxe": {
+  "es": "Hacha de mano",
+  "srdId": "eO7Fbv5WBk5zvGOc",
+  "doc": {
+   "_id": "eO7Fbv5WBk5zvGOc",
+   "name": "Handaxe",
+   "type": "weapon",
+   "img": "icons/weapons/axes/axe-broad-black.webp",
+   "system": {
+    "description": {
+     "value": "<p>This one-handed axe is light and balanced for throwing while remaining useful in hand combat.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 2,
+     "units": "lb"
+    },
+    "price": {
+     "value": 5,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": 20,
+     "long": 60,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 6,
+      "bonus": "",
+      "types": [
+       "slashing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "lgt",
+     "thr"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "simpleM",
+     "baseItem": "handaxe"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "20",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "mastery": "",
+    "identifier": "handaxe"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Rapier": {
+  "es": "Estoque",
+  "srdId": "Tobce1hexTnDk4sV",
+  "doc": {
+   "_id": "Tobce1hexTnDk4sV",
+   "name": "Rapier",
+   "type": "weapon",
+   "img": "icons/weapons/swords/sword-guard-bronze.webp",
+   "system": {
+    "description": {
+     "value": "<p>A thin tensile metal blade, light in weight but long in reach designed for quick darting attacks to target weak points in enemy defenses with lightning swiftness.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 2,
+     "units": "lb"
+    },
+    "price": {
+     "value": 25,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 8,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "fin"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialM",
+     "baseItem": "rapier"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "5",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "rapier"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Light Crossbow": {
+  "es": "Ballesta ligera",
+  "srdId": "ddWvQRLmnnIS0eLF",
+  "doc": {
+   "_id": "ddWvQRLmnnIS0eLF",
+   "name": "Light Crossbow",
+   "type": "weapon",
+   "img": "icons/weapons/crossbows/crossbow-simple-brown.webp",
+   "system": {
+    "description": {
+     "value": "<p>A small crossbow with a wooden haft and a tense cord which is capable of firing a single bolt which can puncture even heavy armor at close range.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 5,
+     "units": "lb"
+    },
+    "price": {
+     "value": 25,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": 80,
+     "long": 320,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 8,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "amm",
+     "lod",
+     "two"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "simpleR",
+     "baseItem": "lightcrossbow"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "80",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "ranged",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {
+     "type": "crossbowBolt"
+    },
+    "mastery": "",
+    "identifier": "light-crossbow"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Lance": {
+  "es": "Lanza de caballería",
+  "srdId": "RnuxdHUAIgxccVwj",
+  "doc": {
+   "_id": "RnuxdHUAIgxccVwj",
+   "name": "Lance",
+   "type": "weapon",
+   "img": "icons/weapons/polearms/spear-simple-engraved.webp",
+   "system": {
+    "description": {
+     "value": "<p>A shining steel tip to puncture the hardiest of foe's defences, driven in by the force of a galloping steed. Although best suited for mounted combat, the lance can be brought to lethal effect on foot in the right hands.</p>\n<p><strong>Special</strong>. You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 6,
+     "units": "lb"
+    },
+    "price": {
+     "value": 10,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "range": {
+     "value": null,
+     "long": null,
+     "units": "ft",
+     "reach": null
+    },
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "spent": 0
+    },
+    "damage": {
+     "versatile": {
+      "number": null,
+      "denomination": null,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "base": {
+      "number": 1,
+      "denomination": 12,
+      "bonus": "",
+      "types": [
+       "piercing"
+      ],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     }
+    },
+    "armor": {
+     "value": 10
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "properties": [
+     "rch",
+     "spc"
+    ],
+    "proficient": null,
+    "type": {
+     "value": "martialM",
+     "baseItem": "lance"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "magicalBonus": null,
+    "activities": {
+     "dnd5eactivity000": {
+      "_id": "dnd5eactivity000",
+      "type": "attack",
+      "activation": {
+       "type": "action",
+       "value": 1,
+       "condition": "",
+       "override": false
+      },
+      "consumption": {
+       "targets": [],
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       },
+       "spellSlot": true
+      },
+      "description": {
+       "chatFlavor": ""
+      },
+      "duration": {
+       "concentration": false,
+       "value": "",
+       "units": "",
+       "special": "",
+       "override": false
+      },
+      "effects": [],
+      "range": {
+       "value": "10",
+       "units": "ft",
+       "special": "",
+       "override": false
+      },
+      "target": {
+       "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+       },
+       "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+       },
+       "prompt": true,
+       "override": false
+      },
+      "attack": {
+       "ability": "",
+       "bonus": "",
+       "critical": {
+        "threshold": null
+       },
+       "flat": false,
+       "type": {
+        "value": "melee",
+        "classification": "weapon"
+       }
+      },
+      "damage": {
+       "critical": {
+        "bonus": ""
+       },
+       "includeBase": true,
+       "parts": []
+      },
+      "uses": {
+       "spent": 0,
+       "recovery": []
+      },
+      "sort": 0
+     }
+    },
+    "attuned": false,
+    "ammunition": {},
+    "identifier": "lance"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Arrow": {
+  "es": "Flecha",
+  "srdId": "3c7JXOzsv55gqJS5",
+  "doc": {
+   "_id": "3c7JXOzsv55gqJS5",
+   "name": "Arrow",
+   "type": "consumable",
+   "img": "icons/weapons/ammunition/arrows-broadhead-white.webp",
+   "system": {
+    "description": {
+     "value": "<p>Standard ammunition used for bows of all varieties. These mundane arrows are made of smooth wooden shafts with goose feather fletching and hammer metal bodkins.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 0.05,
+     "units": "lb"
+    },
+    "price": {
+     "value": 5,
+     "denomination": "cp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "autoDestroy": false,
+     "spent": 0
+    },
+    "damage": {
+     "base": {
+      "number": null,
+      "denomination": 0,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "replace": false
+    },
+    "type": {
+     "value": "ammo",
+     "subtype": "arrow"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "properties": [],
+    "magicalBonus": null,
+    "activities": {},
+    "attuned": false,
+    "identifier": "arrow"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Crossbow Bolt": {
+  "es": "Virote",
+  "srdId": "SItCnYBqhzqBoaWG",
+  "doc": {
+   "_id": "SItCnYBqhzqBoaWG",
+   "name": "Crossbow Bolt",
+   "type": "consumable",
+   "img": "icons/weapons/ammunition/arrow-broadhead-white.webp",
+   "system": {
+    "description": {
+     "value": "<p>This ammunition is used for all varieties of crossbow and is typically a short metal shaft with a narrow piercing tip.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 0.075,
+     "units": "lb"
+    },
+    "price": {
+     "value": 2,
+     "denomination": "cp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "uses": {
+     "max": "",
+     "recovery": [],
+     "autoDestroy": false,
+     "spent": 0
+    },
+    "damage": {
+     "base": {
+      "number": null,
+      "denomination": 0,
+      "bonus": "",
+      "types": [],
+      "custom": {
+       "enabled": false,
+       "formula": ""
+      },
+      "scaling": {
+       "mode": "",
+       "number": null,
+       "formula": ""
+      }
+     },
+     "replace": false
+    },
+    "type": {
+     "value": "ammo",
+     "subtype": "crossbowBolt"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "properties": [],
+    "magicalBonus": null,
+    "activities": {},
+    "attuned": false,
+    "identifier": "crossbow-bolt"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Scale Mail": {
+  "es": "Cota de escamas",
+  "srdId": "XmnlF5fgIO3tg6TG",
+  "doc": {
+   "_id": "XmnlF5fgIO3tg6TG",
+   "name": "Scale Mail",
+   "type": "equipment",
+   "img": "icons/equipment/chest/breastplate-banded-steel.webp",
+   "system": {
+    "description": {
+     "value": "<p>This armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 45,
+     "units": "lb"
+    },
+    "price": {
+     "value": 50,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+     "max": "",
+     "spent": 0,
+     "recovery": []
+    },
+    "armor": {
+     "value": 14,
+     "dex": 2,
+     "magicalBonus": null
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "speed": {
+     "value": null,
+     "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "type": {
+     "value": "medium",
+     "baseItem": "scalemail"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "properties": [
+     "stealthDisadvantage"
+    ],
+    "activities": {},
+    "attuned": false,
+    "identifier": "scale-mail"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Hide Armor": {
+  "es": "Armadura de pieles",
+  "srdId": "n1V07puo0RQxPGuF",
+  "doc": {
+   "_id": "n1V07puo0RQxPGuF",
+   "name": "Hide Armor",
+   "type": "equipment",
+   "img": "icons/equipment/chest/vest-cloth-tattered-tan.webp",
+   "system": {
+    "description": {
+     "value": "<p>This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 12,
+     "units": "lb"
+    },
+    "price": {
+     "value": 10,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+     "max": "",
+     "spent": 0,
+     "recovery": []
+    },
+    "armor": {
+     "value": 12,
+     "dex": 2,
+     "magicalBonus": null
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "speed": {
+     "value": null,
+     "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "type": {
+     "value": "medium",
+     "baseItem": "hide"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "properties": [],
+    "activities": {},
+    "attuned": false,
+    "identifier": "hide-armor"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Chain Shirt": {
+  "es": "Camisa de mallas",
+  "srdId": "p2zChy24ZJdVqMSH",
+  "doc": {
+   "_id": "p2zChy24ZJdVqMSH",
+   "name": "Chain Shirt",
+   "type": "equipment",
+   "img": "icons/equipment/chest/breastplate-scale-grey.webp",
+   "system": {
+    "description": {
+     "value": "<p>Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 20,
+     "units": "lb"
+    },
+    "price": {
+     "value": 50,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+     "max": "",
+     "spent": 0,
+     "recovery": []
+    },
+    "armor": {
+     "value": 13,
+     "dex": 2,
+     "magicalBonus": null
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "speed": {
+     "value": null,
+     "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "type": {
+     "value": "medium",
+     "baseItem": "chainshirt"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "properties": [],
+    "activities": {},
+    "attuned": false,
+    "identifier": "chain-shirt"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Shield": {
+  "es": "Escudo",
+  "srdId": "sSs3hSzkKBMNBgTs",
+  "doc": {
+   "_id": "sSs3hSzkKBMNBgTs",
+   "name": "Shield",
+   "type": "equipment",
+   "img": "icons/equipment/shield/round-wooden-boss-steel-brown.webp",
+   "system": {
+    "description": {
+     "value": "<p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 6,
+     "units": "lb"
+    },
+    "price": {
+     "value": 10,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+     "max": "",
+     "spent": 0,
+     "recovery": []
+    },
+    "armor": {
+     "value": 2,
+     "dex": null,
+     "magicalBonus": null
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "speed": {
+     "value": null,
+     "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "type": {
+     "value": "shield",
+     "baseItem": "shield"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "properties": [],
+    "activities": {},
+    "attuned": false,
+    "identifier": "shield"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Padded Armor": {
+  "es": "Armadura acolchada",
+  "srdId": "GtKV1b5uqFQqpEni",
+  "doc": {
+   "_id": "GtKV1b5uqFQqpEni",
+   "name": "Padded Armor",
+   "type": "equipment",
+   "img": "icons/equipment/chest/breastplate-quilted-brown.webp",
+   "system": {
+    "description": {
+     "value": "<p>Padded armor consists of quilted layers of cloth and batting. Padded armor offers a comparable level of protection as stiffened leather but is somewhat less encumbering to the wearer.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 8,
+     "units": "lb"
+    },
+    "price": {
+     "value": 5,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "uses": {
+     "max": "",
+     "spent": 0,
+     "recovery": []
+    },
+    "armor": {
+     "value": 11,
+     "dex": null,
+     "magicalBonus": null
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "speed": {
+     "value": null,
+     "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "type": {
+     "value": "light",
+     "baseItem": "padded"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "properties": [
+     "stealthDisadvantage"
+    ],
+    "activities": {},
+    "attuned": false,
+    "identifier": "padded-armor"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Studded Leather Armor": {
+  "es": "Armadura de cuero tachonado",
+  "srdId": "TIV3B1vbrVHIhQAm",
+  "doc": {
+   "_id": "TIV3B1vbrVHIhQAm",
+   "name": "Studded Leather Armor",
+   "type": "equipment",
+   "img": "icons/equipment/chest/breastplate-rivited-red.webp",
+   "system": {
+    "description": {
+     "value": "<p>Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 13,
+     "units": "lb"
+    },
+    "price": {
+     "value": 45,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "uses": {
+     "max": "",
+     "spent": 0,
+     "recovery": []
+    },
+    "armor": {
+     "value": 12,
+     "dex": null,
+     "magicalBonus": null
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "speed": {
+     "value": null,
+     "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "type": {
+     "value": "light",
+     "baseItem": "studded"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "properties": [],
+    "activities": {},
+    "attuned": false,
+    "identifier": "studded-leather-armor"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ },
+ "Leather Armor": {
+  "es": "Armadura de cuero",
+  "srdId": "WwdpHLXGX5r8uZu5",
+  "doc": {
+   "_id": "WwdpHLXGX5r8uZu5",
+   "name": "Leather Armor",
+   "type": "equipment",
+   "img": "icons/equipment/chest/breastplate-scale-leather.webp",
+   "system": {
+    "description": {
+     "value": "<p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p>",
+     "chat": ""
+    },
+    "source": {
+     "custom": "SRD 5.1 (CC-BY-4.0)",
+     "book": "",
+     "page": "",
+     "license": "CC-BY-4.0",
+     "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+     "value": 10,
+     "units": "lb"
+    },
+    "price": {
+     "value": 10,
+     "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+     "max": "",
+     "spent": 0,
+     "recovery": []
+    },
+    "armor": {
+     "value": 11,
+     "dex": null,
+     "magicalBonus": null
+    },
+    "hp": {
+     "value": 0,
+     "max": 0,
+     "dt": null,
+     "conditions": ""
+    },
+    "speed": {
+     "value": null,
+     "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "type": {
+     "value": "light",
+     "baseItem": "leather"
+    },
+    "unidentified": {
+     "description": ""
+    },
+    "container": null,
+    "properties": [],
+    "activities": {},
+    "attuned": false,
+    "identifier": "leather-armor"
+   },
+   "effects": [],
+   "flags": {}
+  }
+ }
+}

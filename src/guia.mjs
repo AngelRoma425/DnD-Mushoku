@@ -23,6 +23,14 @@ const paginas = [
   <li>Arrastra cualquier hechizo, dote u objeto del compendio a la hoja. Las razas añaden sus rasgos automáticamente.</li>
 </ul>`],
 
+  ["Resumen de la Campaña", `
+<h1>Historias del Mundo de las Seis Caras: Anomalía</h1>
+<p>Generaciones después de Rudeus Greyrat, el mundo vive en paz y los aventureros casi han desaparecido. Pero en Fittoa, un grupo reunido al azar descubrió un laberinto imposible y, con él, la verdad que les reveló Kasten: las <strong>Anomalías</strong> están brotando por todo el mundo y devoran el maná de todo lo que tocan.</p>
+<h2>Arco 1: el Continente Demoníaco</h2>
+<p>En Rikarisu se enfrentaron a <em>La Muda del Desierto</em>, derrotaron a El Jardinero y escucharon por primera vez de la misteriosa <strong>«Estrella»</strong> que guía a las anomalías. Siguieron las pistas sobre Laplace y el Dios Dragón hasta los confines del continente.</p>
+<h2>Arco 2: el Continente Central</h2>
+<p>Ahora el viaje los lleva de vuelta al <strong>Continente Central</strong>, donde todo empezó. Allí les esperan nuevas anomalías, respuestas sobre el pasado de algunos de ellos… y quizá la raíz de todo.</p>`],
+
   ["El Mundo", `
 <h1>El Mundo de las Seis Caras</h1>
 <h2>Continente Central</h2>

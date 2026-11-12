@@ -2,15 +2,15 @@
   "id": "mushoku-tensei-dnd",
   "title": "Mushoku Tensei para D&D 5e",
   "description": "Contenido homebrew inspirado en Mushoku Tensei para dnd5e (reglas 2014): hechizos por niveles, estilos Filo/Cauce/Nórdico Celestial, Toki, ojos demoníacos, razas, objetos, bestiario, guía del mundo y el material del DM de la campaña «Anomalía».",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "authors": [
     {
       "name": "AngelRoma425"
     }
   ],
   "compatibility": {
-    "minimum": "12",
-    "verified": "13"
+    "minimum": "13",
+    "verified": "14"
   },
   "relationships": {
     "systems": [
@@ -20,6 +20,13 @@
         "compatibility": {
           "minimum": "4.0.0"
         }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "item-piles",
+        "type": "module",
+        "reason": "Los mercaderes del compendio «MT · Mercaderes» son tiendas de Item Piles."
       }
     ]
   },
@@ -121,6 +128,27 @@
         "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "mt-mercaderes",
+      "label": "MT · Mercaderes",
+      "path": "packs/mt-mercaderes",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "mt-tablas",
+      "label": "MT · Tablas de Campaña",
+      "path": "packs/mt-tablas",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "packFolders": [
@@ -144,7 +172,9 @@
       "packs": [
         "mt-campana",
         "mt-campana-objetos",
-        "mt-anomalias"
+        "mt-anomalias",
+        "mt-mercaderes",
+        "mt-tablas"
       ]
     }
   ],
