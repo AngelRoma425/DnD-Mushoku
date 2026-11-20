@@ -39,6 +39,10 @@ Después abre un mundo con el sistema **dnd5e** y activa el módulo en *Game Set
 
 **Instalación manual:** descomprime `dist/mushoku-tensei-dnd.zip` en `Data/modules/mushoku-tensei-dnd/` (dentro debe quedar `module.json`).
 
+## Exportar fichas de Roll20
+
+La carpeta [`roll20-exporter/`](roll20-exporter/) es una extensión de navegador que descarga las fichas de personaje de una partida de Roll20 como JSON. Las instrucciones están en su [README](roll20-exporter/README.md). Guarda las fichas exportadas en `exports/`, que no se sube al repositorio.
+
 ## Editar o añadir contenido
 
 Todo el contenido está en `src/*.mjs` (texto en HTML, en español). Después de modificarlo:

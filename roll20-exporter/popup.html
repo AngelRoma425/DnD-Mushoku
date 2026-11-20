@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Exportar fichas de Roll20</title>
+  <style>
+    :root { --bg:#fff; --fg:#1d1d1f; --muted:#6b6b70; --line:#e3e3e8; --accent:#c43c5d; --ok:#2e7d32; --err:#c62828; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#1e1e22; --fg:#ececf0; --muted:#9a9aa3; --line:#34343b; --accent:#ec6d8b; --ok:#81c784; --err:#ef9a9a; } }
+    * { box-sizing: border-box; }
+    body { margin:0; width:340px; font:13px/1.4 system-ui, sans-serif; background:var(--bg); color:var(--fg); }
+    header { padding:12px 14px 8px; border-bottom:1px solid var(--line); }
+    h1 { font-size:14px; margin:0; }
+    #campaign { color:var(--muted); font-size:12px; margin-top:2px; }
+    main { padding:10px 14px 14px; }
+    .row { display:flex; gap:8px; align-items:center; }
+    input[type=search] { flex:1; padding:6px 8px; border:1px solid var(--line); border-radius:6px; background:transparent; color:inherit; }
+    #list { max-height:260px; overflow:auto; border:1px solid var(--line); border-radius:6px; margin:8px 0; }
+    #list label { display:flex; gap:8px; align-items:center; padding:5px 8px; border-bottom:1px solid var(--line); cursor:pointer; }
+    #list label:last-child { border-bottom:0; }
+    #list img { width:22px; height:22px; border-radius:4px; object-fit:cover; background:var(--line); }
+    #list .arch { color:var(--muted); font-size:11px; margin-left:auto; }
+    .opts label { display:flex; gap:6px; align-items:center; margin:3px 0; }
+    button { padding:7px 10px; border-radius:6px; border:1px solid var(--line); background:transparent; color:inherit; cursor:pointer; }
+    button.primary { background:var(--accent); border-color:var(--accent); color:#fff; font-weight:600; width:100%; margin-top:8px; }
+    button:disabled { opacity:.5; cursor:default; }
+    #status { margin-top:8px; font-size:12px; white-space:pre-line; }
+    .ok { color:var(--ok); } .err { color:var(--err); } .muted { color:var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Exportar fichas de Roll20</h1>
+    <div id="campaign">Buscando la partida…</div>
+  </header>
+  <main id="main" hidden>
+    <div class="row">
+      <input id="filter" type="search" placeholder="Filtrar por nombre…">
+      <button id="all" title="Marcar o desmarcar todos los visibles">Todos</button>
+    </div>
+    <div id="list"></div>
+    <div class="opts">
+      <label><input type="checkbox" id="bundle"> Todo en un único archivo</label>
+      <label><input type="checkbox" id="blobs" checked> Incluir biografía y notas del DM</label>
+      <label><input type="checkbox" id="parsed" checked> Añadir resumen legible (atributos y secciones repetibles)</label>
+      <label><input type="checkbox" id="archived"> Mostrar personajes archivados</label>
+    </div>
+    <button id="go" class="primary" disabled>Exportar</button>
+  </main>
+  <div id="status" style="padding:0 14px 12px"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

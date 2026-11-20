@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Roll20 → JSON (exportar fichas)",
+  "short_name": "Roll20 JSON",
+  "version": "1.0.0",
+  "description": "Exporta las fichas de personaje de una partida de Roll20 a archivos JSON (atributos, secciones repetibles, habilidades, biografía y token).",
+  "action": {
+    "default_title": "Exportar fichas de Roll20",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://app.roll20.net/editor/*", "https://app.roll20.net/editor"],
+      "js": ["page.js"],
+      "world": "MAIN",
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://app.roll20.net/editor/*", "https://app.roll20.net/editor"],
+      "js": ["bridge.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "roll20-json-export@dnd-mushoku",
+      "strict_min_version": "128.0"
+    }
+  }
+}
