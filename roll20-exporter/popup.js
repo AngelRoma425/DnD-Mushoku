@@ -90,8 +90,10 @@ $("go").addEventListener("click", async () => {
 
 (async () => {
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-  if (!tab || !/^https:\/\/app\.roll20\.net\/editor/.test(tab.url || "")) {
-    $("campaign").textContent = "Abre una partida en app.roll20.net/editor para usar la extensión.";
+  // Sin el permiso "tabs" el navegador no nos da tab.url, así que no se puede
+  // comprobar la dirección: se intenta hablar con la página directamente.
+  if (!tab) {
+    $("campaign").textContent = "No hay ninguna pestaña activa.";
     return;
   }
   tabId = tab.id;
@@ -103,7 +105,7 @@ $("go").addEventListener("click", async () => {
     render();
   } catch (e) {
     const msg = /Receiving end does not exist|Could not establish connection/i.test(e.message)
-      ? "La extensión aún no está activa en esta pestaña. Recarga la página de Roll20 y vuelve a abrirla."
+      ? "Abre una partida en app.roll20.net/editor en esta pestaña. Si ya está abierta, recarga la página y vuelve a pulsar el icono."
       : e.message;
     $("campaign").textContent = "No se pudo leer la partida.";
     status(msg, "err");

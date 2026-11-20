@@ -53,7 +53,7 @@ El bloque `character` sigue el mismo esquema (`schema_version: 2`) que usan otra
 
 ## Problemas comunes
 
-- **«La extensión aún no está activa en esta pestaña»**: recarga la página de Roll20.
+- **«Abre una partida en app.roll20.net/editor…»** estando ya en la partida: recarga la página de Roll20 y vuelve a pulsar el icono. Si la extensión se recargó o actualizó, también hay que recargar la pestaña.
 - **Un personaje sale sin atributos**: Roll20 a veces no los descarga hasta que se abre la ficha. Ábrela una vez y vuelve a exportar.
 - Los nombres de archivo se guardan sin tildes (por compatibilidad con los navegadores); dentro del JSON los nombres quedan intactos.
 
