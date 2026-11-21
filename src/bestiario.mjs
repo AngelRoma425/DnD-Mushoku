@@ -73,7 +73,7 @@ export function npc(name, { img = "icons/svg/mystery-man.svg", cr, xp, size = "m
 
 export default [
   npc("Coyote Pax", {
-    cr: 0.25, ac: 12, hp: 9, hpFormula: "2d8", walk: 40, abilities: abil(12, 15, 11, 3, 12, 6), skills: { per: 1, ste: 1 },
+    cr: 0.25, ac: 12, hp: 9, hpFormula: "2d8", walk: 40, abilities: abil(12, 15, 11, 3, 12, 6), skills: { prc: 1, ste: 1 },
     biography: html("Coyotes de pelaje pardo que cazan en manadas de seis a doce en las praderas del Continente Central. Son la presa típica de los aventureros de rango F y E, y su piel se vende barata en el gremio."),
     items: [
       weapon("Coyote Pax", "Mordisco", { number: 1, denomination: 6, types: ["piercing"] }),
@@ -81,7 +81,7 @@ export default [
     ]
   }),
   npc("Lobo Ácido", {
-    cr: 1, ac: 13, hp: 26, hpFormula: "4d8+8", walk: 40, abilities: abil(15, 15, 14, 3, 12, 6), skills: { per: 1, ste: 1 }, darkvision: 60,
+    cr: 1, ac: 13, hp: 26, hpFormula: "4d8+8", walk: 40, abilities: abil(15, 15, 14, 3, 12, 6), skills: { prc: 1, ste: 1 }, darkvision: 60,
     biography: html("Un lobo de pelaje verdoso del Continente Demoníaco cuya saliva corroe metal y carne. Caza en grupos de tres a cinco. Su glándula de ácido es un material muy cotizado por los alquimistas."),
     items: [
       weapon("Lobo Ácido", "Mordisco Ácido", { number: 1, denomination: 8, types: ["piercing"], extraParts: [dmg(1, 6, "acid")], description: "Si el objetivo lleva armadura metálica no mágica y el ataque impacta con un crítico, la armadura sufre un −1 permanente a la CA." }),
@@ -113,7 +113,7 @@ export default [
     ]
   }),
   npc("Espadachín del Filo Celestial (Experto)", {
-    cr: 5, type: "humanoid", ac: 16, hp: 82, hpFormula: "11d8+33", walk: 35, abilities: abil(16, 18, 16, 11, 13, 10), skills: { acr: 1, ath: 1, per: 1 },
+    cr: 5, type: "humanoid", ac: 16, hp: 82, hpFormula: "11d8+33", walk: 35, abilities: abil(16, 18, 16, 11, 13, 10), skills: { acr: 1, ath: 1, prc: 1 },
     languages: ["common"],
     biography: html("Un espadachín de nivel Avanzado (Experto) del Estilo Filo Celestial, formado en el Santuario de la Espada del norte. Ataca siempre primero y busca terminar el combate de un único corte."),
     items: [

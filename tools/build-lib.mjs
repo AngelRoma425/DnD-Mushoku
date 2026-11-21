@@ -6,7 +6,7 @@ import { id } from "./helpers.mjs";
 
 const EMBEDDED = { actors: ["items", "effects"], items: ["effects"], journal: ["pages"], tables: ["results"] };
 
-const FOLDER_TYPE = { items: "Item", actors: "Actor", journal: "JournalEntry", tables: "RollTable" };
+const FOLDER_TYPE = { items: "Item", actors: "Actor", journal: "JournalEntry", tables: "RollTable", macros: "Macro" };
 
 /** Crea las carpetas (rutas "A/B") que usan los documentos de un compendio. */
 function folders(docs, collection, pack) {
