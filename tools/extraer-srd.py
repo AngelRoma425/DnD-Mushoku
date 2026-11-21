@@ -1,6 +1,6 @@
 """Extrae del SRD 5.1 (CC-BY-4.0) del sistema dnd5e el equipo básico que venden los mercaderes.
 
-Uso: python3 -I tools/extraer-srd.py <ruta a dnd5e/packs/_source> > src/campana/srd-equipo.json
+Uso: python3 -I tools/extraer-srd.py <ruta a dnd5e/packs/_source> > <carpeta>/srd-equipo.json
 """
 import sys, glob, json, yaml
 

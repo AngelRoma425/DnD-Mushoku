@@ -14,7 +14,7 @@ const paginas = [
 <ul>
   <li><strong>MT · Guía del Mundo</strong> (este diario): mundo, magia, estilos de espada, razas, idiomas, gremio y monedas.</li>
   <li><strong>MT · Hechizos</strong>, <strong>MT · Rasgos y Dotes</strong>, <strong>MT · Razas</strong>, <strong>MT · Objetos</strong> y <strong>MT · Bestiario</strong>: contenido general para cualquier campaña.</li>
-  <li><strong>MT · Campaña: Anomalía</strong>, <strong>MT · Objetos de Campaña</strong> y <strong>MT · Anomalías</strong>: material del DM para la campaña <em>Anomalía</em> (los jugadores no los ven).</li>
+  <li>El material del DM de la campaña <em>Anomalía</em> va en un módulo privado aparte (los jugadores no lo ven).</li>
 </ul>
 <h2>Consejos rápidos</h2>
 <ul>

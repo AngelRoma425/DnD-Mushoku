@@ -1,6 +1,8 @@
 import { createHash } from "node:crypto";
 
 export const MODULE_ID = "mushoku-tensei-dnd";
+/** Módulo dueño de los enlaces que genera uuid(); un módulo privado puede cambiarlo con MT_LINK_MODULE. */
+export const LINK_MODULE = process.env.MT_LINK_MODULE || MODULE_ID;
 export const SOURCE = { custom: "Mushoku Tensei (homebrew)", book: "Mushoku Tensei", page: "", license: "" };
 
 const ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -14,7 +16,7 @@ export function id(...parts) {
 }
 
 export function uuid(pack, type, name) {
-  return `Compendium.${MODULE_ID}.${pack}.${type}.${id(pack, name)}`;
+  return `Compendium.${LINK_MODULE}.${pack}.${type}.${id(pack, name)}`;
 }
 
 /** Parte de daño o curación de dnd5e 4.x/5.x. */

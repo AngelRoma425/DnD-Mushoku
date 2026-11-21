@@ -17,15 +17,7 @@ Pensado para **Foundry v14** y el sistema dnd5e con **reglas de 2014**, usando l
 | **MT · Objetos** (20) | Bastones, Piedra Mágica, pergaminos y las 14 monedas de Asura, Milis y el Continente Demoníaco. |
 | **MT · Bestiario** (5) | Coyote Pax, Lobo Ácido, mago, Caballero del Templo de Milis, espadachín del Filo Celestial. |
 
-### Campaña «Anomalía» (solo DM)
-
-| Compendio | Qué trae |
-|---|---|
-| **MT · Campaña: Anomalía** | Premisa, origen de las anomalías, tramas de los PJ, visiones, PNJ, Metro, Rikarisu, La Muda del Desierto, Aldea Migurd, diario de sesiones, secretos de objetos y música. |
-| **MT · Objetos de Campaña** (132) | Todo el botín y los mercaderes del documento de lore, organizados en carpetas (Metro por jugador, mercaderes de Rikarisu, Sáqher, investigación d20, botín del Jardinero, materiales, Roka y Dreno). Incluye bonificadores, resistencias y curaciones automáticas. |
-| **MT · Anomalías** (6) | Lobo Siamés, Monstruo Mudado, Lagarto Florido, Guerrero Mantis, Greenkeeper y El Jardinero (con las 10 habilidades copiadas). Las estadísticas son una propuesta: ajústalas a tu mesa. |
-| **MT · Mercaderes** (8) | Tiendas de **Item Piles** listas: Yor'Zuh, Myrrha, Kiri-Kiri, Seh'ra, Rakk y Sáqher (Rikarisu), Roka y Dreno (Aldea Migurd), con todo su inventario y precios. Kiri-Kiri y Roka venden además las armas y armaduras básicas del SRD. |
-| **MT · Tablas de Campaña** (8) | Tablas aleatorias: botín del Metro por jugador, investigación y botín de la taberna oculta, y caravanas destruidas. |
+El material del DM de la campaña *Anomalía* (diario, objetos, anomalías, mercaderes y tablas) se distribuye aparte, en un módulo privado, para no publicar spoilers.
 
 ## Instalación
 
