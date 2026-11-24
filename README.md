@@ -16,6 +16,17 @@ Pensado para **Foundry v14** y el sistema dnd5e con **reglas de 2014**, usando l
 | **MT · Razas** (8) | Migurd, Superd, Dedorudia, Adorudia, Mirudetto, Orejas Puntiagudas, Mineros de Carbón y Cuerpo de Niño. |
 | **MT · Objetos** (20) | Bastones, Piedra Mágica, pergaminos y las 14 monedas de Asura, Milis y el Continente Demoníaco. |
 | **MT · Bestiario** (5) | Coyote Pax, Lobo Ácido, mago, Caballero del Templo de Milis, espadachín del Filo Celestial. |
+| **MT · Tutorial de Foundry** (aventura) | Mundo de práctica para enseñar Foundry a los jugadores: 2 escenas, 4 personajes pregenerados, enemigos de prueba, guía con 7 lecciones y notas del DM. |
+
+### Tutorial de Foundry para jugadores
+
+1. En Foundry crea un **mundo nuevo** con el sistema **dnd5e** (por ejemplo «Tutorial») y activa este módulo.
+2. Abre el compendio **MT · Tutorial de Foundry** y la aventura **Tutorial de Foundry** → **Importar aventura**.
+3. Abre el diario **Notas del DM · Tutorial**: explica cómo crear los usuarios, asignar personajes y un plan de sesión de 60–90 minutos.
+
+Los jugadores siguen el diario **Guía de Foundry para Jugadores** (también enlazado desde las chinchetas del mapa): pantalla, mover y medir, puertas y visión, hoja de personaje, tiradas y chat, ataques y conjuros, combate por turnos y una chuleta de atajos.
+
+Los mapas se generan con `node tools/tutorial-mapas.mjs` (necesita Playwright) a partir de `src/tutorial/mapas.mjs`, que también define muros, puertas y luces.
 
 El material del DM de la campaña *Anomalía* (diario, objetos, anomalías, mercaderes y tablas) se distribuye aparte, en un módulo privado, para no publicar spoilers.
 
@@ -45,6 +56,8 @@ Esto regenera las carpetas de `packs/`. Para publicar una versión nueva: sube `
 ## Licencias
 
 Las armas, armaduras y munición básicas de las tiendas proceden del **System Reference Document 5.1** de Wizards of the Coast LLC, disponible en https://dnd.wizards.com/resources/systems-reference-document y publicado bajo la licencia Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/legalcode). Sus nombres se tradujeron al español.
+
+Los personajes pregenerados del tutorial (Randal, Riswynn, Zanna y Akra), sus conjuros, rasgos y equipo, la poción de curación y la antorcha proceden de los compendios SRD 5.1 del sistema **dnd5e** de Foundry VTT (misma licencia CC-BY-4.0), extraídos con `tools/extraer-heroes.py`; se tradujeron y resumieron sus textos. Las imágenes de las fichas son las del propio sistema dnd5e.
 
 ## Aviso
 

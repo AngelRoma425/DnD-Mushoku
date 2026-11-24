@@ -6,7 +6,7 @@ import { id } from "./helpers.mjs";
 
 const EMBEDDED = { actors: ["items", "effects"], items: ["effects"], journal: ["pages"], tables: ["results"] };
 
-const FOLDER_TYPE = { items: "Item", actors: "Actor", journal: "JournalEntry", tables: "RollTable", macros: "Macro" };
+const FOLDER_TYPE = { items: "Item", actors: "Actor", journal: "JournalEntry", tables: "RollTable", macros: "Macro", adventures: "Adventure" };
 
 /** Crea las carpetas (rutas "A/B") que usan los documentos de un compendio. */
 function folders(docs, collection, pack) {
@@ -33,7 +33,7 @@ function prepare(doc, collection, pack, key = null, parentKey = null, folderMap 
     ? `!${[...parentKey.collections, collection].join(".")}!${[...parentKey.ids, out._id].join(".")}`
     : `!${collection}!${out._id}`;
   out.flags ??= {};
-  out.ownership ??= { default: 0 };
+  if (collection !== "adventures") out.ownership ??= { default: 0 };
   if (!parentKey) out.folder = doc.folder ? folderMap.get(doc.folder)._id : null;
   for (const sub of EMBEDDED[collection] ?? []) {
     out[sub] = (out[sub] ?? []).map((child, i) =>

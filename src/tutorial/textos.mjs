@@ -1,0 +1,96 @@
+// Nombres y descripciones en español de los objetos de los héroes del SRD (ver tools/extraer-heroes.py).
+// [nombre original]: [nombre en español, descripción breve]
+
+export const OBJETOS = {
+  // Clases, razas, trasfondos y rasgos
+  "Fighter": ["Guerrero", "Maestro de las armas y las armaduras. Tiene más puntos de golpe que nadie y aguanta en primera línea."],
+  "Rogue": ["Pícaro", "Experto en sigilo, cerraduras y golpes certeros. Hace mucho daño cuando pilla al enemigo desprevenido."],
+  "Wizard": ["Mago", "Estudioso de la magia arcana. Lanza conjuros desde su libro de conjuros usando su Inteligencia."],
+  "Cleric": ["Clérigo", "Sirviente de una deidad. Cura a sus aliados y castiga a sus enemigos con magia divina (Sabiduría)."],
+  "Life Domain": ["Dominio de la Vida", "Subclase de clérigo centrada en la curación."],
+  "Variant Human": ["Humano (variante)", "+1 a dos características, una habilidad y una dote a elección."],
+  "Hill Dwarf": ["Enano de las colinas", "Robusto y tenaz. Visión en la oscuridad (60 pies) y resistencia al veneno."],
+  "Rock Gnome": ["Gnomo de las rocas", "Pequeño e ingenioso. Visión en la oscuridad (60 pies) y ventaja en salvaciones mentales contra magia."],
+  "Dragonborn": ["Dracónido", "Descendiente de dragones. Tiene un arma de aliento y resistencia a un tipo de daño (frío)."],
+  "Watchman": ["Vigilante", "Trasfondo: antiguo miembro de la guardia de una ciudad."],
+  "Bureaucrat": ["Burócrata", "Trasfondo: funcionaria acostumbrada a papeles, sellos y trámites."],
+  "Scholar": ["Erudita", "Trasfondo: estudiosa de bibliotecas y archivos."],
+  "Priest": ["Sacerdote", "Trasfondo: servidor de un templo."],
+  "Grappler": ["Luchador de agarre", "Dote: ventaja en los ataques contra una criatura a la que estás agarrando."],
+  "Fighting Style": ["Estilo de combate", "El guerrero elige una especialidad de combate. Randal eligió <strong>Defensa</strong>."],
+  "Defense": ["Defensa", "Mientras llevas armadura, ganas +1 a la CA (ya está sumado en la hoja: es un <em>efecto</em> pasivo)."],
+  "Second Wind": ["Tomar Aliento", "Una vez por descanso, como acción adicional, recuperas 1d10 + tu nivel de guerrero en puntos de golpe. <strong>Pruébalo:</strong> haz clic en él y verás cómo gasta su uso y te cura."],
+  "Expertise": ["Pericia", "Duplicas el bonificador de competencia en dos habilidades (en la hoja aparecen marcadas con un símbolo de competencia doble)."],
+  "Sneak Attack": ["Ataque Furtivo", "Una vez por turno, si tienes ventaja (o un aliado junto al objetivo) y usas un arma sutil o a distancia, sumas 1d6 de daño. Haz clic en él tras impactar para tirar el daño extra."],
+  "Thieves' Cant": ["Jerga de Ladrones", "Lenguaje secreto de señas y palabras en clave que entienden los pícaros."],
+  "Dwarven Resilience": ["Resistencia Enana", "Ventaja en las salvaciones contra veneno y resistencia al daño de veneno."],
+  "Stonecunning": ["Afinidad con la Piedra", "Bonificador extra en las pruebas de Historia sobre trabajos en piedra."],
+  "Gnome Cunning": ["Astucia Gnoma", "Ventaja en las salvaciones de Inteligencia, Sabiduría y Carisma contra magia."],
+  "Artificer's Lore": ["Saber del Artífice", "Bonificador extra en Historia sobre objetos mágicos y artefactos."],
+  "Tinker": ["Manitas", "Puedes construir pequeños aparatos mecánicos de juguete."],
+  "Spellcasting": ["Lanzamiento de Conjuros", "Puedes lanzar conjuros. Mira la pestaña <strong>Conjuros</strong>: arriba están tus <em>espacios de conjuro</em>, que se gastan al lanzar conjuros de nivel 1 o superior. Los trucos (nivel 0) son gratis."],
+  "Arcane Recovery": ["Recuperación Arcana", "Una vez al día, al terminar un descanso corto, recuperas espacios de conjuro gastados."],
+  "Divine Domain": ["Dominio Divino", "El clérigo elige un dominio de su dios. Akra sirve al <strong>Dominio de la Vida</strong>."],
+  "Bonus Proficiency": ["Competencia Adicional", "Competencia con armaduras pesadas."],
+  "Disciple of Life": ["Discípulo de la Vida", "Tus conjuros de curación curan 2 + el nivel del conjuro puntos de golpe adicionales."],
+  "Breath Weapon - White": ["Arma de Aliento (frío)", "Como acción, exhalas un cono de 15 pies de frío. Cada criatura hace una salvación de Constitución; recibe 2d6 de daño de frío si falla, o la mitad si tiene éxito. Una vez por descanso. <strong>Pruébalo:</strong> al usarlo, Foundry te deja colocar la plantilla del cono sobre el mapa."],
+
+  // Armas y armaduras
+  "Longsword": ["Espada Larga", "Arma marcial cuerpo a cuerpo. 1d8 cortante (1d10 a dos manos)."],
+  "Longbow": ["Arco Largo", "Arma marcial a distancia (150/600 pies). 1d8 perforante. Gasta flechas."],
+  "Handaxe": ["Hacha de Mano", "Arma sencilla ligera y arrojadiza (20/60 pies). 1d6 cortante."],
+  "Dagger": ["Daga", "Arma sencilla sutil, ligera y arrojadiza (20/60 pies). 1d4 perforante."],
+  "Rapier": ["Estoque", "Arma marcial sutil. 1d8 perforante. Sirve para el Ataque Furtivo."],
+  "Shortbow": ["Arco Corto", "Arma sencilla a distancia (80/320 pies). 1d6 perforante. Gasta flechas."],
+  "Quarterstaff": ["Bastón", "Arma sencilla. 1d6 contundente (1d8 a dos manos)."],
+  "Mace": ["Maza", "Arma sencilla. 1d6 contundente."],
+  "Light Crossbow": ["Ballesta Ligera", "Arma sencilla a distancia (80/320 pies). 1d8 perforante. Gasta virotes."],
+  "Chain Mail": ["Cota de Malla", "Armadura pesada. CA 16. Desventaja en Sigilo."],
+  "Scale Mail": ["Cota de Escamas", "Armadura media. CA 14 + Destreza (máx. +2). Desventaja en Sigilo."],
+  "Leather Armor": ["Armadura de Cuero", "Armadura ligera. CA 11 + Destreza."],
+  "Shield": ["Escudo", "+2 a la CA mientras lo llevas equipado."],
+  "Arrow": ["Flecha", "Munición para arcos. Se gasta una cada vez que disparas."],
+  "Crossbow Bolt": ["Virote", "Munición para ballestas."],
+
+  // Equipo
+  "Hammer": ["Martillo", "Herramienta."], "Tinderbox": ["Yesquero", "Para encender fuego."],
+  "Waterskin": ["Odre", "Lleva agua para el viaje."], "Torch": ["Antorcha", "Da luz brillante en 20 pies y tenue otros 20. Dura 1 hora."],
+  "Quiver": ["Carcaj", "Guarda 20 flechas."], "Rations": ["Raciones", "Comida para un día de viaje."],
+  "Pouch": ["Bolsa", "Bolsa pequeña para monedas y cachivaches."], "Crowbar": ["Palanca", "Ventaja en las pruebas de Fuerza para forzar cosas."],
+  "Bedroll": ["Petate", "Para dormir al raso."], "Backpack": ["Mochila", "Contenedor: arrastra objetos dentro de ella en el inventario."],
+  "Piton": ["Clavija", "Clavija de escalada."], "Hempen Rope (50 ft.)": ["Cuerda de Cáñamo (50 pies)", "Cuerda resistente."],
+  "Mess Kit": ["Utensilios de Cocina", "Plato, taza y cubiertos."], "Horn": ["Cuerno", "Instrumento para dar la alarma."],
+  "Fine Clothes": ["Ropas Finas", "Ropa elegante."], "Thieves' Tools": ["Herramientas de Ladrón", "Para abrir cerraduras y desactivar trampas. Úsalas desde el inventario para hacer la tirada."],
+  "Small Knife": ["Cuchillo Pequeño", "Cuchillo de uso diario."], "Ink Pen": ["Pluma", "Para escribir."],
+  "Robes": ["Túnica", "Ropa de mago."], "Parchment": ["Pergamino", "Hoja para escribir."],
+  "Book of Lore": ["Libro de Saber", "Tratado sobre un tema de estudio."], "Spellbook": ["Libro de Conjuros", "Contiene los conjuros de mago que conoces."],
+  "Ink Bottle": ["Frasco de Tinta", "Tinta negra."], "Component Pouch": ["Bolsa de Componentes", "Materiales para lanzar conjuros."],
+  "Holy Symbol": ["Símbolo Sagrado", "Canalizador de la magia del clérigo."], "Stick of Incense": ["Varilla de Incienso", "Para los rituales del templo."],
+  "Common Clothes": ["Ropas Comunes", "Ropa sencilla."], "Vestments": ["Vestiduras", "Ropas ceremoniales."],
+  "Prayer Book": ["Libro de Oraciones", "Plegarias y cánticos."],
+  "Potion of Healing": ["Poción de Curación", "Al beberla recuperas 2d4 + 2 puntos de golpe. <strong>Pruébalo:</strong> haz clic en ella; se gasta una y se tira la curación en el chat."],
+
+  // Conjuros de mago
+  "Fire Bolt": ["Descarga de Fuego", "Truco. Ataque de conjuro a distancia (120 pies): 1d10 de fuego. <strong>Pruébalo:</strong> marca un objetivo con <kbd>T</kbd>, haz clic en el conjuro y luego en <em>Ataque</em> y <em>Daño</em>."],
+  "Light": ["Luz", "Truco. Un objeto brilla como una antorcha (20 pies de luz brillante, 20 tenue) durante 1 hora."],
+  "Mage Hand": ["Mano de Mago", "Truco. Una mano espectral que mueve objetos ligeros a 30 pies."],
+  "Magic Missile": ["Proyectil Mágico", "Nivel 1. Tres dardos que impactan siempre: 1d4 + 1 de fuerza cada uno. No hace falta tirar ataque, solo daño."],
+  "Mage Armor": ["Armadura de Mago", "Nivel 1. Si no llevas armadura, tu CA pasa a 13 + Destreza durante 8 horas. Aplica un <em>efecto</em> que cambia la CA de la hoja."],
+  "spell:Shield": ["Escudo", "Nivel 1, <strong>reacción</strong> cuando te van a golpear: +5 a la CA hasta tu siguiente turno."],
+  "Sleep": ["Dormir", "Nivel 1. Las criaturas en una esfera de 20 pies caen dormidas, empezando por las de menos PG (tira 5d8). Coloca la plantilla de área en el mapa."],
+  "Alarm": ["Alarma", "Nivel 1 (ritual). Avisa si alguien entra en una zona vigilada."],
+  "Find Familiar": ["Encontrar Familiar", "Nivel 1 (ritual). Invocas un espíritu con forma de animal pequeño que te ayuda."],
+
+  // Conjuros de clérigo
+  "Sacred Flame": ["Llama Sagrada", "Truco. El objetivo hace una salvación de Destreza o recibe 1d8 de daño radiante. <strong>Aquí no tiras tú para atacar:</strong> tira el objetivo."],
+  "Guidance": ["Orientación", "Truco, concentración. Un aliado suma 1d4 a una prueba de característica."],
+  "Thaumaturgy": ["Taumaturgia", "Truco. Pequeñas maravillas: tu voz retumba, las llamas parpadean, las puertas se abren de golpe…"],
+  "Bless": ["Bendición", "Nivel 1, concentración. Hasta tres aliados suman 1d4 a sus ataques y salvaciones. Al lanzarlo, aplica el <em>efecto</em> a los objetivos desde la tarjeta del chat."],
+  "Cure Wounds": ["Curar Heridas", "Nivel 1. Tocas a una criatura y recupera 1d8 + Sabiduría puntos de golpe (+3 por Discípulo de la Vida)."],
+  "Healing Word": ["Palabra Curativa", "Nivel 1, <strong>acción adicional</strong>, 60 pies. La criatura recupera 1d4 + Sabiduría puntos de golpe (+3 por Discípulo de la Vida)."],
+  "Guiding Bolt": ["Saeta Guía", "Nivel 1. Ataque de conjuro a distancia: 4d6 de daño radiante y el siguiente ataque contra el objetivo tiene ventaja."],
+  "Shield of Faith": ["Escudo de la Fe", "Nivel 1, acción adicional, concentración. Una criatura gana +2 a la CA durante 10 minutos."]
+};
+
+/** Conjuros de Akra que se conservan (el resto se quita para no abrumar). */
+export const CONJUROS_CLERIGO = ["Sacred Flame", "Guidance", "Thaumaturgy", "Bless", "Cure Wounds", "Healing Word", "Guiding Bolt", "Shield of Faith"];
