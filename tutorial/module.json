@@ -1,0 +1,42 @@
+{
+  "id": "mushoku-tutorial-foundry",
+  "title": "Tutorial de Foundry para Jugadores (dnd5e)",
+  "description": "Un mundo de práctica para enseñar a los jugadores a usar Foundry VTT: dos escenas (campo de entrenamiento y arena), cuatro personajes pregenerados de nivel 1, enemigos de prueba, una guía de 7 lecciones con retos y las notas del DM con un plan de sesión. Importa la aventura en un mundo nuevo y vacío.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "AngelRoma425"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "4.0.0"
+        }
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "tutorial-foundry",
+      "label": "Tutorial de Foundry",
+      "path": "packs/tutorial-foundry",
+      "type": "Adventure",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "url": "https://github.com/AngelRoma425/DnD-Mushoku",
+  "manifest": "https://raw.githubusercontent.com/AngelRoma425/DnD-Mushoku/claude/happy-bell-7cxfbl/tutorial/module.json",
+  "download": "https://raw.githubusercontent.com/AngelRoma425/DnD-Mushoku/claude/happy-bell-7cxfbl/tutorial/dist/mushoku-tutorial-foundry.zip"
+}

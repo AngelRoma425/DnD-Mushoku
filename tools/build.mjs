@@ -10,7 +10,6 @@ import razas from "../src/razas.mjs";
 import objetos from "../src/objetos.mjs";
 import bestiario from "../src/bestiario.mjs";
 import guia from "../src/guia.mjs";
-import tutorial from "../src/tutorial.mjs";
 
 export const PACKS = [
   { name: "mt-hechizos", collection: "items", docs: hechizos },
@@ -18,8 +17,7 @@ export const PACKS = [
   { name: "mt-razas", collection: "items", docs: razas },
   { name: "mt-objetos", collection: "items", docs: objetos },
   { name: "mt-bestiario", collection: "actors", docs: bestiario },
-  { name: "mt-guia", collection: "journal", docs: guia },
-  { name: "mt-tutorial", collection: "adventures", docs: tutorial }
+  { name: "mt-guia", collection: "journal", docs: guia }
 ];
 
 const root = path.resolve(import.meta.dirname, "..");

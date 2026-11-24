@@ -2,7 +2,7 @@
   "id": "mushoku-tensei-dnd",
   "title": "Mushoku Tensei para D&D 5e",
   "description": "Contenido homebrew inspirado en Mushoku Tensei para dnd5e (reglas 2014): hechizos por niveles, estilos Filo/Cauce/Nórdico Celestial, Toki, ojos demoníacos, razas, objetos, bestiario, guía del mundo y el material del DM de la campaña «Anomalía».",
-  "version": "0.5.0",
+  "version": "0.4.1",
   "authors": [
     {
       "name": "AngelRoma425"
@@ -96,17 +96,6 @@
         "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
       }
-    },
-    {
-      "name": "mt-tutorial",
-      "label": "MT · Tutorial de Foundry",
-      "path": "packs/mt-tutorial",
-      "type": "Adventure",
-      "system": "dnd5e",
-      "ownership": {
-        "PLAYER": "NONE",
-        "ASSISTANT": "OWNER"
-      }
     }
   ],
   "packFolders": [
@@ -120,8 +109,7 @@
         "mt-rasgos",
         "mt-razas",
         "mt-objetos",
-        "mt-bestiario",
-        "mt-tutorial"
+        "mt-bestiario"
       ]
     }
   ],

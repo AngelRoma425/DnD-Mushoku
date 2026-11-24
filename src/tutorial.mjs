@@ -7,8 +7,8 @@ import { OBJETOS, CONJUROS_CLERIGO } from "./tutorial/textos.mjs";
 import { npc, abil, trait } from "./bestiario.mjs";
 import BESTIARIO from "./bestiario.mjs";
 
-const PACK = "mt-tutorial";
-const ASSETS = "modules/mushoku-tensei-dnd/assets/tutorial";
+const PACK = "mt-tutorial"; // semilla de los IDs (no cambiar: los IDs se mantienen estables)
+const ASSETS = "modules/mushoku-tutorial-foundry/assets";
 const SRD = JSON.parse(fs.readFileSync(new URL("./tutorial/srd-heroes.json", import.meta.url), "utf8"));
 const STATS = { coreVersion: "13.351", systemId: "dnd5e", systemVersion: "4.4.4" };
 const tid = (...p) => id(PACK, ...p);
@@ -320,7 +320,7 @@ ${table(["Tiempo", "Qué hacer", "Tu papel"], [
   <li><strong>Mostrar algo</strong>: en cualquier diario o imagen hay un botón <em>Mostrar a los jugadores</em>.</li>
   <li><strong>Atraer la vista de todos</strong>: ${k("Shift")} + mantener pulsado en el mapa hace un ping que centra la cámara de todos en ese punto.</li>
   <li><strong>Reiniciar la niebla</strong>: en los controles de iluminación hay un botón para restablecer la exploración.</li>
-  <li>¿Quieres repetir el tutorial? Vuelve a importar la aventura desde el compendio <em>MT · Tutorial de Foundry</em>: se sobrescriben las escenas y personajes con su estado original.</li>
+  <li>¿Quieres repetir el tutorial? Vuelve a importar la aventura desde el compendio <em>Tutorial de Foundry</em>: se sobrescriben las escenas y personajes con su estado original.</li>
 </ul>`]
 ];
 

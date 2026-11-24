@@ -4,3 +4,6 @@ packs/**/LOCK
 packs/**/LOG
 packs/**/LOG.old
 exports/
+tutorial/packs/**/LOCK
+tutorial/packs/**/LOG
+tutorial/packs/**/LOG.old

@@ -1,11 +1,11 @@
-// Dibuja las imágenes de los mapas del tutorial (assets/tutorial/*.jpg) a partir de src/tutorial/mapas.mjs.
+// Dibuja las imágenes de los mapas del tutorial (tutorial/assets/*.jpg) a partir de src/tutorial/mapas.mjs.
 // Uso: node tools/tutorial-mapas.mjs   (necesita Playwright con Chromium; solo hace falta al cambiar los mapas)
 import fs from "node:fs";
 import path from "node:path";
 import { createRequire } from "node:module";
 import { GRID as G, CAMPO, ARENA, arenaMuros } from "../src/tutorial/mapas.mjs";
 
-const out = path.resolve(import.meta.dirname, "..", "assets", "tutorial");
+const out = path.resolve(import.meta.dirname, "..", "tutorial", "assets");
 fs.mkdirSync(out, { recursive: true });
 
 const defs = `
@@ -138,6 +138,6 @@ for (const [name, { w, h, svg }] of Object.entries({ campo: campo(), arena: aren
   await page.setViewportSize({ width: w, height: h });
   await page.setContent(`<html><body style="margin:0"><svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}">${defs}${svg}</svg></body></html>`);
   await page.screenshot({ path: path.join(out, `${name}.jpg`), type: "jpeg", quality: 82 });
-  console.log(`✔ assets/tutorial/${name}.jpg (${w}×${h})`);
+  console.log(`✔ tutorial/assets/${name}.jpg (${w}×${h})`);
 }
 await browser.close();

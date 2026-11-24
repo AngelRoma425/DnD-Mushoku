@@ -16,19 +16,24 @@ Pensado para **Foundry v14** y el sistema dnd5e con **reglas de 2014**, usando l
 | **MT · Razas** (8) | Migurd, Superd, Dedorudia, Adorudia, Mirudetto, Orejas Puntiagudas, Mineros de Carbón y Cuerpo de Niño. |
 | **MT · Objetos** (20) | Bastones, Piedra Mágica, pergaminos y las 14 monedas de Asura, Milis y el Continente Demoníaco. |
 | **MT · Bestiario** (5) | Coyote Pax, Lobo Ácido, mago, Caballero del Templo de Milis, espadachín del Filo Celestial. |
-| **MT · Tutorial de Foundry** (aventura) | Mundo de práctica para enseñar Foundry a los jugadores: 2 escenas, 4 personajes pregenerados, enemigos de prueba, guía con 7 lecciones y notas del DM. |
 
-### Tutorial de Foundry para jugadores
+### Módulo aparte: Tutorial de Foundry para Jugadores
 
-1. En Foundry crea un **mundo nuevo** con el sistema **dnd5e** (por ejemplo «Tutorial») y activa este módulo.
-2. Abre el compendio **MT · Tutorial de Foundry** y la aventura **Tutorial de Foundry** → **Importar aventura**.
+En la carpeta `tutorial/` hay un **segundo módulo independiente** (`mushoku-tutorial-foundry`) con un mundo de práctica para enseñar Foundry a los jugadores. No reemplaza ni modifica este módulo ni tu mundo de campaña.
+
+Para instalarlo, en Foundry ve a **Add-on Modules → Install Module** y pega en *Manifest URL*:
+
+```
+https://raw.githubusercontent.com/AngelRoma425/DnD-Mushoku/claude/happy-bell-7cxfbl/tutorial/module.json
+```
+
+1. Crea un **mundo nuevo** con el sistema **dnd5e** (por ejemplo «Tutorial») y activa el módulo *Tutorial de Foundry para Jugadores*.
+2. Abre el compendio **Tutorial de Foundry** y la aventura **Tutorial de Foundry** → **Importar aventura**.
 3. Abre el diario **Notas del DM · Tutorial**: explica cómo crear los usuarios, asignar personajes y un plan de sesión de 60–90 minutos.
 
-Los jugadores siguen el diario **Guía de Foundry para Jugadores** (también enlazado desde las chinchetas del mapa): pantalla, mover y medir, puertas y visión, hoja de personaje, tiradas y chat, ataques y conjuros, combate por turnos y una chuleta de atajos.
+Incluye 2 escenas (Campo de Entrenamiento y Arena de Combate), 4 personajes pregenerados de nivel 1, muñecos y coyotes de prueba, la **Guía de Foundry para Jugadores** (7 lecciones con retos y una chuleta de atajos) y las notas del DM.
 
-Los mapas se generan con `node tools/tutorial-mapas.mjs` (necesita Playwright) a partir de `src/tutorial/mapas.mjs`, que también define muros, puertas y luces.
-
-El material del DM de la campaña *Anomalía* (diario, objetos, anomalías, mercaderes y tablas) se distribuye aparte, en un módulo privado, para no publicar spoilers.
+Para editarlo: el contenido está en `src/tutorial.mjs` y `src/tutorial/`; compila con `npm run build:tutorial` y empaqueta con `npm run package:tutorial` (sube antes `version` en `tutorial/module.json`). Los mapas se dibujan con `node tools/tutorial-mapas.mjs` (necesita Playwright) a partir de `src/tutorial/mapas.mjs`, que también define muros, puertas y luces.
 
 ## Instalación
 
