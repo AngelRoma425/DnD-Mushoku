@@ -3,7 +3,7 @@ import { createHash } from "node:crypto";
 export const MODULE_ID = "mushoku-tensei-dnd";
 /** Módulo dueño de los enlaces que genera uuid(); un módulo privado puede cambiarlo con MT_LINK_MODULE. */
 export const LINK_MODULE = process.env.MT_LINK_MODULE || MODULE_ID;
-export const SOURCE = { custom: "Mushoku Tensei (homebrew)", book: "Mushoku Tensei", page: "", license: "" };
+export const SOURCE = { custom: "Mushoku Tensei (homebrew)", book: "Mushoku Tensei", page: "", license: "", rules: "2014" };
 
 const ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
